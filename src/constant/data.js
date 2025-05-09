@@ -84,4 +84,35 @@ const FAQ_LIST = [
   },
 ];
 
-export { PREMIUM_HOUSES, FAQ_LIST };
+const CLIENTS = [
+  {
+    avatar: "src/assets/profile1.jpg",
+    name: "Sajibur Rahman",
+    role: "UI/UX Designer",
+    review:
+      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+  },
+  {
+    avatar: "src/assets/profile2.jpg",
+    name: "Sajibur Rahman",
+    role: "UI/UX Designer",
+    review:
+      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+  },
+  {
+    avatar: "src/assets/profile3.avif",
+    name: "Sajibur Rahman",
+    role: "UI/UX Designer",
+    review:
+      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+  },
+  {
+    avatar: "src/assets/profile4.avif",
+    name: "Sajibur Rahman",
+    role: "UI/UX Designer",
+    review:
+      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+  },
+];
+
+export { PREMIUM_HOUSES, FAQ_LIST, CLIENTS };
