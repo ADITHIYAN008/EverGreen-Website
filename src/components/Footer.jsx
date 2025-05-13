@@ -3,13 +3,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="mb-10">
+    <div id="contact" className="mb-10">
       <div className="relative">
-        <div className="w-ful relative h-[200px] overflow-clip">
+        <div className="w-full relative h-[200px] overflow-clip">
           <img src="src/assets/one.jpg" alt="" />
           <div className="bg-black/50 absolute top-0 w-full h-full"></div>
         </div>
-        <div className="absolute text-primary top-10 left-10 w-[300px] mx-auto">
+        <div className="absolute text-primary top-10 left-1/5 sm:left-1/4 w-[300px] md:left-[30%] lg:left-1/3">
           <h3 className="text-2xl text-center font-medium">
             Ready to Make Your Dream Property a Reality?
           </h3>
@@ -39,22 +39,22 @@ const Footer = () => {
         <div>
           <ul className="flex gap-6 text-[12px] justify-center">
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 Home
               </a>
             </li>
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 About
               </a>
             </li>
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 Properties
               </a>
             </li>
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 Services
               </a>
             </li>
@@ -62,22 +62,22 @@ const Footer = () => {
           <h2 className="mt-8 mb-8 text-center">EverGreen</h2>
           <ul className="flex gap-6 text-[12px] justify-center">
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 Gallery
               </a>
             </li>
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 FAQ
               </a>
             </li>
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 Pricing
               </a>
             </li>
             <li>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer hover:underline" href="#">
                 Contact
               </a>
             </li>

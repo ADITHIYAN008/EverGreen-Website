@@ -12,30 +12,30 @@ import { CLIENTS } from "@/constant/data";
 const Testimonials = () => {
   return (
     <div className="px-3 mb-15">
-      <div className="text-secondary flex items-center mb-22">
-        <h2 className="text-[27px] w-[300px] font-semibold">
+      <div className="text-secondary flex items-center mb-22 sm:justify-between sm:px-5 lg:px-20">
+        <h2 className="text-[27px] md:w-[400px] md:text-4xl w-[300px] font-semibold">
           What our clients say about us
         </h2>
         <div>
-          <div className="flex relative">
+          <div className="flex relative ">
             <img
               className="w-7 h-7 absolute rounded-full"
-              src="src/assets/profile.png"
+              src="src/assets/profile1.jpg"
               alt=""
             />
             <img
-              className="w-7 h-7 absolute left-5 rounded-full"
-              src="src/assets/profile.png"
+              className="w-7 h-7 object-cover absolute left-5 rounded-full"
+              src="src/assets/profile2.jpg"
               alt=""
             />
             <img
-              className="w-7 h-7 absolute left-10 rounded-full"
-              src="src/assets/profile.png"
+              className="w-7 h-7 object-cover absolute left-10 rounded-full"
+              src="src/assets/profile3.avif"
               alt=""
             />
             <img
-              className="w-7 h-7 absolute left-15 rounded-full"
-              src="src/assets/profile.png"
+              className="w-7 object-cover  h-7 absolute left-15 rounded-full"
+              src="src/assets/profile4.avif"
               alt=""
             />
           </div>
@@ -45,12 +45,12 @@ const Testimonials = () => {
         </div>
       </div>
       <div>
-        <Carousel className="mx-auto max-w-xs">
+        <Carousel className="mx-auto sm:min-w-[400px] md:min-w-[550px] max-w-xs">
           <CarouselContent>
             {CLIENTS.map((item, index) => (
               <CarouselItem key={index}>
                 <div className="p-1">
-                  <Card className="bg-gray-400/10 text-secondary border border-secondary/20 h-[200px]">
+                  <Card className="bg-gray-400/10 text-secondary border  border-secondary/20 h-[200px]">
                     <CardContent className="flex justify-center px-6">
                       <div className="flex flex-col items-end ">
                         <p className="text-[12px] min-h-[110px]">
