@@ -5,7 +5,10 @@ import { GoDotFill } from "react-icons/go";
 
 const Premium = () => {
   return (
-    <div id="property" className="text-secondary mb-12 px-3">
+    <div
+      id="property"
+      className="text-secondary max-w-[1100px] mx-auto mb-12 px-3"
+    >
       <div className="px-2 mb-8 md:flex md:justify-between items-center">
         <div>
           <h2 className="text-[27px] md:text-4xl mt-10 font-semibold">
@@ -25,12 +28,12 @@ const Premium = () => {
           </button>
         </div>
       </div>
-      <ul className="md:grid grid-cols-2">
+      <ul className="md:grid grid-cols-2 xl:grid-cols-3">
         {PREMIUM_HOUSES.map((item, index) => (
           <li className="mb-12" key={index}>
             <div className="relative">
               <img
-                className="rounded-3xl cursor-pointer md:max-w-[350px] md:min-h-[300px] lg:h-[400px] lg:max-w-[450px] md:object-cover"
+                className="rounded-3xl cursor-pointer md:max-w-[350px] md:min-h-[300px] lg:h-[400px] lg:max-w-[450px] md:object-cover xl:max-w-[320px] xl:max-h-[200px]"
                 src={item.url}
                 alt={item.title}
               />

@@ -11,7 +11,7 @@ import { CLIENTS } from "@/constant/data";
 
 const Testimonials = () => {
   return (
-    <div className="px-3 mb-15">
+    <div className="px-3 mb-15 max-w-[1100px] mx-auto">
       <div className="text-secondary flex items-center mb-22 sm:justify-between sm:px-5 lg:px-20">
         <h2 className="text-[27px] md:w-[400px] md:text-4xl w-[300px] font-semibold">
           What our clients say about us

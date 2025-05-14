@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="flex md:hidden justify-between px-2 pt-5 items-center fixed w-full z-5">
+      <nav className="flex md:hidden z-50 justify-between px-2 pt-5 items-center fixed w-full ">
         <div className="flex w-full justify-between backdrop-blur-3xl px-4 py-2 bg-primary rounded-full shadow-2xl border border-secondary/40">
           <h1 className="text-2xl font-secondary text-secondary">EverGreen</h1>
           <div className="flex gap-6 items-center">
@@ -63,7 +63,7 @@ const Nav = () => {
       <nav className="text-primary lg:bg-center hidden md:block px-6 py-7 z-50 fixed items-center w-full justify-between">
         <div className="flex justify-between items-center">
           <h3 className="text-3xl text-shadow-md">EverGreen</h3>
-          <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1">
+          <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1 border border-secondary/40">
             {tabs.map((tab) => {
               let href = "#";
 
@@ -80,7 +80,7 @@ const Nav = () => {
                   className={`px-4 py-2 select-none rounded-full text-sm font-medium cursor-pointer transition 
                 ${
                   activeTab === tab
-                    ? "bg-white text-black shadow"
+                    ? "bg-white border border-secondary/50 text-black shadow"
                     : "text-secondary/60 hover:bg-white/10"
                 }`}
                 >
@@ -92,13 +92,13 @@ const Nav = () => {
 
           <div className="flex gap-4 items-center">
             <div className="hidden lg:block">
-              <div className="flex items-center gap-2">
-                <IoEarthOutline className="size-8" />
-                <h2 className="text-[16px]">Eng</h2>
+              <div className="flex items-center cursor-pointer gap-2">
+                <IoEarthOutline className="size-8 text-secondary" />
+                <h2 className="text-[16px] text-secondary">Eng</h2>
               </div>
             </div>
             <a
-              className="bg-[#b9dd8a] text-secondary px-5 py-2 rounded-full"
+              className="bg-[#b9dd8a] text-secondary px-5 py-2 rounded-full border hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
               href="#"
             >
               Sign Up

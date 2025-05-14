@@ -18,7 +18,10 @@ const About = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div id="about" className="text-secondary md:mt-10 px-4 mb-12">
+    <div
+      id="about"
+      className="text-secondary mt-10 max-w-[1100px] mx-auto md:mt-10 px-4 mb-12"
+    >
       <div className="md:flex">
         <h2 className="text-[32px] leading-12 font-medium tracking-tight sm:max-w-[500px] mb-5">
           Your primary home might begin to feel left out.
@@ -26,7 +29,7 @@ const About = () => {
         <div className="flex gap-3 md:gap-0 items-center cursor-pointer">
           <div className="w-[90px] h-auto rounded-full overflow-clip mx-[6%] relative cursor-pointer">
             <img src="src/assets/one.jpg" alt="video-img" />
-            <div className="absolute top-1/4 left-1/3 bg-primary rounded-full sm:top-[30%] sm:left-[40%] w-[25px] h-[25px] md:top-2 md:left-4">
+            <div className="absolute top-1/4 left-1/3 bg-primary rounded-full sm:top-[30%] sm:left-[40%] w-[25px] h-[25px] md:top-2 md:left-4 xl:top-4 xl:left-7">
               <img className="p-2" src="src/assets/play.png" alt="play-icon" />
             </div>
           </div>
@@ -36,18 +39,18 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-end gap-2">
-        <div className="mt-10 min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative">
+      <div className="flex items-end flex-col xl:flex-row gap-2">
+        <div className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative">
           <img
             className="rounded-2xl lg:h-full lg:object-cover md:mb-7 w-full"
             src={images[currentIndex]}
             alt="Main"
           />
-          <div className="absolute bottom-17 md:bottom-8 md:right-5 right-2 flex gap-2 bg-primary px-2 py-[5px] rounded-3xl">
+          <div className="absolute bottom-5 xl:bottom-17 md:bottom-8 md:right-5 right-2 flex gap-2 bg-primary px-2 py-[5px] rounded-3xl">
             {images.map((img, index) => (
               <img
                 key={index}
-                className={`w-10 h-10 rounded-full transition-all duration-300 ${
+                className={` w-5 h-5 md:w-10  md:h-10 rounded-full transition-all duration-300 ${
                   currentIndex === index ? "border-1 border-white" : "border"
                 }`}
                 src={img}
@@ -56,8 +59,8 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <div className="w-1/2 rounded-xl min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-3">
+        <div className="flex md:flex-col gap-2">
+          <div className="w-1/2 rounded-xl h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 ">
             <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center lg:mt-10">
               Big things can happen in small spaces.
             </h3>
@@ -65,7 +68,7 @@ const About = () => {
               With thoughtful design and smart organization, you can maximize
               every inch, making room for creativity
             </p>
-            <button className="text-[10px] ml-10 bg-primary px-4 py-2 sm:w-full sm:mx-auto mt-6 rounded-full border cursor-pointer border-secondary/30">
+            <button className="text-[10px] mx-auto w-full bg-primary px-4 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border cursor-pointer border-secondary/30">
               Details
             </button>
           </div>
@@ -74,7 +77,7 @@ const About = () => {
             <h2 className="mt-4 flex flex-col text-[14px] font-medium">
               Pricing Start at <span>$256K</span>
             </h2>
-            <button className="flex bg-secondary text-primary items-center text-[10px] px-4 lg:mt-2 py-3 rounded-3xl mt-5 mx-auto gap-2 cursor-pointer">
+            <button className="flex bg-secondary text-primary items-center text-[10px] px-4 lg:mt-2 py-3 rounded-3xl mt-5 mx-auto mb-3 gap-2 cursor-pointer">
               Explore Properties <FaArrowRightLong />
             </button>
           </div>

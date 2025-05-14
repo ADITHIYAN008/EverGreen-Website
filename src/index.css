@@ -20,6 +20,8 @@ html {
 body {
   color: white;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  user-select: black;
 }
 
 @layer utilities {
@@ -30,4 +32,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+::selection {
+  background-color: #b9dd8a;
+  color: white;
 }
