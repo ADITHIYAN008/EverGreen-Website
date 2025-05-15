@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const About = () => {
   const images = [
@@ -40,7 +41,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex items-end flex-col xl:flex-row gap-2">
-        <div className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative">
+        <div className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative border border-secondary/30 rounded-2xl">
           <img
             className="rounded-2xl lg:h-full lg:object-cover md:mb-7 w-full"
             src={images[currentIndex]}
@@ -60,7 +61,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex md:flex-col gap-2">
-          <div className="w-1/2 rounded-xl h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 ">
+          <div className="w-1/2 h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl">
             <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center lg:mt-10">
               Big things can happen in small spaces.
             </h3>
@@ -68,17 +69,31 @@ const About = () => {
               With thoughtful design and smart organization, you can maximize
               every inch, making room for creativity
             </p>
-            <button className="text-[10px] mx-auto w-full bg-primary px-4 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border cursor-pointer border-secondary/30">
+            <button className="text-[10px] mx-auto w-full bg-primary px-4 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border hover:bg-secondary hover:text-primary hover:border-primary cursor-pointer transition-all duration-500 border-secondary/30">
               Details
             </button>
           </div>
-          <div className="w-1/2 rounded-xl min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px]">
+          <div className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl">
             <img className="rounded-xl" src="src/assets/four.jpg" alt="" />
             <h2 className="mt-4 flex flex-col text-[14px] font-medium">
               Pricing Start at <span>$256K</span>
             </h2>
             <button className="flex bg-secondary text-primary items-center text-[10px] px-4 lg:mt-2 py-3 rounded-3xl mt-5 mx-auto mb-3 gap-2 cursor-pointer">
-              Explore Properties <FaArrowRightLong />
+              Explore Properties{" "}
+              <motion.div
+                initial={{
+                  x: 0,
+                }}
+                animate={{
+                  x: [0, 7, 0],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                }}
+              >
+                <FaArrowRightLong />
+              </motion.div>
             </button>
           </div>
         </div>

@@ -22,6 +22,7 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   user-select: black;
+  padding-left: 10px;
 }
 
 @layer utilities {
@@ -35,5 +36,5 @@ body {
 }
 ::selection {
   background-color: #b9dd8a;
-  color: white;
+  color: black;
 }

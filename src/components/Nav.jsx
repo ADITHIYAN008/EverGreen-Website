@@ -98,7 +98,7 @@ const Nav = () => {
               </div>
             </div>
             <a
-              className="bg-[#b9dd8a] text-secondary px-5 py-2 rounded-full border hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
+              className="bg-[#aad86d] text-secondary px-5 py-2 rounded-full border hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
               href="#"
             >
               Sign Up

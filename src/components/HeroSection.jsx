@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { easeIn, easeInOut, motion } from "framer-motion";
 
 const HeroSection = () => {
+  const textButton = ["House", "Appartment", "Residential"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % textButton.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  });
   return (
     <>
       <div id="home" className="relative w-screen pb-1">
@@ -9,31 +20,71 @@ const HeroSection = () => {
           src="src/assets/two.jpg"
           alt="hero-image"
         />
-        <div className="w-full z-20 bg-secondary absolute top-0 h-full opacity-15"></div>
+        <div className="w-full z-20 bg-secondary absolute top-0 h-full opacity-35"></div>
         <div className="relative max-w-[1100px] mx-auto">
           <div className="absolute bottom-10 left-3 md:bottom-10 z-40">
             <div className="flex gap-1 xl:mb-10 mb-7">
-              <button className="bg-primary text-[12px] text-secondary sm:text-base px-3 py-1.5 rounded-2xl lg:text-[12px] lg:font-semibold lg:px-4 lg:rounded-full">
-                House
-              </button>
-              <button className="bg-primary text-[12px] text-secondary sm:text-base px-3 py-1.5 rounded-2xl lg:text-[12px] lg:font-semibold lg:px-4 lg:rounded-full">
-                Apartment
-              </button>
-              <button className="bg-primary sm:text-base text-[12px] text-secondary px-3 py-1.5 rounded-2xl lg:text-[12px] lg:font-semibold lg:px-4 lg:rounded-full">
-                Residential
+              <button className="bg-[#aad86d] text-[12px] text-secondary sm:text-base px-3 py-1.5 rounded-2xl lg:text-[12px] lg:font-semibold lg:px-4 lg:rounded-full">
+                {textButton[currentIndex]}
               </button>
             </div>
-            <h1 className="text-[2.7rem] leading-12 font-medium flex sm:text-[3rem] flex-col md:text-[4rem] md:mt-10 md:leading-16 lg:text-[5rem] xl:mb-10">
-              Build Your Future,<span>One Property at a Time.</span>
-            </h1>
-            <p className="mt-5 text-[10px] w-[350px] sm:text-p[17px] sm:min-w-[600px] lg:min-w-[800px] lg:mt-8 text-primary/70 md:text-[12px] xl:mb-10">
+            <motion.h1
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.2,
+              }}
+              className="text-[2.7rem] leading-12 font-medium flex sm:text-[3rem] flex-col md:text-[4rem] md:mt-10 md:leading-16  lg:text-[5rem] xl:mb-10"
+            >
+              <div>
+                Build Your <span className="text-[#aad86d]">Future,</span>
+              </div>
+
+              <span>One Property at a Time.</span>
+            </motion.h1>
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.3,
+              }}
+              className="mt-5 text-[10px] w-[350px] sm:text-p[17px] sm:min-w-[600px] lg:min-w-[800px] lg:mt-8 text-primary/70 md:text-[12px] xl:mb-10"
+            >
               At EverGreen, we believe everyone deserves a place to call their
               own. Whether you're searching for your first home or your next
               investment, we’re here to help you own your world—one property at
               a time. Discover spaces that match your lifestyle, goals, and
               dreams.
-            </p>
-            <div className="flex justify-center lg:w-[117%]">
+            </motion.p>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.5,
+              }}
+              className="flex justify-center lg:w-[117%]"
+            >
               <div className="w-[360px] hidden md:block px-6 py-6 rounded-3xl mt-6 h-auto bg-primary border sm:min-w-[500px] border-gray-400/30 md:w-[96%] shadow-2xl text-secondary">
                 <h2 className="text-2xl mb-4 font-semibold">
                   Find the best place
@@ -98,11 +149,25 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="flex md:hidden justify-center mb-12">
-          <div className="w-[360px] px-6 py-6 rounded-3xl z-40 mt-6 h-auto bg-primary border sm:min-w-[500px] border-gray-400/30 shadow-2xl text-secondary">
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+            }}
+            className="w-[360px] px-6 py-6 rounded-3xl z-40 mt-6 h-auto bg-primary border sm:min-w-[500px] border-gray-400/30 shadow-2xl text-secondary"
+          >
             <h2 className="text-2xl mb-4 font-semibold">Find the best place</h2>
             <div>
               <div className="mb-2">
@@ -158,7 +223,7 @@ const HeroSection = () => {
                 Search Properties
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
