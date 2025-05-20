@@ -5,10 +5,12 @@ import App from "./App.jsx";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AllList from "./components/AllList";
+import ScrollToTop from "./components/ScrollToTop";
 
 createRoot(document.getElementById("root")).render(
   <Router>
     <StrictMode>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/AllList" element={<AllList />} />
