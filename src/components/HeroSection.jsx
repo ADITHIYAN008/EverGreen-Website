@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { easeIn, easeInOut, motion } from "framer-motion";
+import HeroImg from "../assets/two.jpg";
 
 const HeroSection = () => {
   const textButton = ["House", "Appartment", "Residential"];
@@ -17,7 +18,7 @@ const HeroSection = () => {
       <div id="home" className="relative w-screen pb-1">
         <img
           className="min-w-screen md:max-h-screen md:object-cover min-h-[40rem] object-cover"
-          src="src/assets/two.jpg"
+          src={HeroImg}
           alt="hero-image"
         />
         <div className="w-full z-20 bg-secondary absolute top-0 h-full opacity-35"></div>
@@ -44,7 +45,7 @@ const HeroSection = () => {
               className="text-[2.7rem] leading-12 font-medium flex sm:text-[3rem] flex-col md:text-[4rem] md:mt-10 md:leading-16  lg:text-[5rem] xl:mb-10"
             >
               <div>
-                Build Your <span className="text-[#27A830]">Future,</span>
+                Build Your<span className="text-[#27A830]">Future,</span>
               </div>
 
               <span>One Property at a Time.</span>
