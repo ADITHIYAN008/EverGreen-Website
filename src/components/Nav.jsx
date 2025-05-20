@@ -62,8 +62,8 @@ const Nav = () => {
       </nav>
       <nav className="text-primary lg:bg-center hidden md:block px-6 py-7 z-50 fixed items-center w-full justify-between">
         <div className="flex justify-between items-center">
-          <h3 className="text-3xl text-shadow-md">EverGreen</h3>
-          <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1 border border-secondary/40">
+          <img className="w-[15rem]" src="src/assets/EverGreen.png" alt="" />
+          <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1 border border-secondary/40 mr-36">
             {tabs.map((tab) => {
               let href = "#";
 
@@ -98,7 +98,7 @@ const Nav = () => {
               </div>
             </div>
             <a
-              className="bg-[#aad86d] text-secondary px-5 py-2 rounded-full border hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
+              className="bg-[#52e05b] text-secondary px-5 py-2 rounded-full border hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
               href="#"
             >
               Sign Up

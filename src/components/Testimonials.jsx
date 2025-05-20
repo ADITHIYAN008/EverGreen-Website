@@ -75,8 +75,8 @@ const Testimonials = () => {
             ))}
           </CarouselContent>
           <div className="absolute -top-8 right-14">
-            <CarouselPrevious className="bg-black" />
-            <CarouselNext className="bg-black" />
+            <CarouselPrevious className="bg-black cursor-pointer" />
+            <CarouselNext className="bg-black cursor-pointer" />
           </div>
         </Carousel>
       </div>

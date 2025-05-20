@@ -24,7 +24,7 @@ const HeroSection = () => {
         <div className="relative max-w-[1100px] mx-auto">
           <div className="absolute bottom-10 left-3 md:bottom-10 z-40">
             <div className="flex gap-1 xl:mb-10 mb-7">
-              <button className="bg-[#aad86d] text-[12px] text-secondary sm:text-base px-3 py-1.5 rounded-2xl lg:text-[12px] lg:font-semibold lg:px-4 lg:rounded-full">
+              <button className="bg-[#48c450] text-[12px] text-secondary sm:text-base px-3 py-1.5 rounded-2xl lg:text-[12px] lg:font-semibold lg:px-4 lg:rounded-full">
                 {textButton[currentIndex]}
               </button>
             </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
               className="text-[2.7rem] leading-12 font-medium flex sm:text-[3rem] flex-col md:text-[4rem] md:mt-10 md:leading-16  lg:text-[5rem] xl:mb-10"
             >
               <div>
-                Build Your <span className="text-[#aad86d]">Future,</span>
+                Build Your <span className="text-[#27A830]">Future,</span>
               </div>
 
               <span>One Property at a Time.</span>

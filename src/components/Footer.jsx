@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -22,7 +23,21 @@ const Footer = () => {
               className="bg-primary mx-auto mt-5 flex max-w-[130px] text-[12px] rounded-3xl px-4 py-2 gap-3 items-center text-secondary"
               href="#"
             >
-              Get Started <FaArrowRightLong />{" "}
+              Get Started{" "}
+              <motion.div
+                initial={{
+                  x: 0,
+                }}
+                animate={{
+                  x: [0, 12, 0],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                }}
+              >
+                <FaArrowRightLong />
+              </motion.div>
             </a>
           </div>
         </div>

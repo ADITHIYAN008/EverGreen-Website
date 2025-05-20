@@ -2,6 +2,8 @@ import { PREMIUM_HOUSES } from "@/constant/data";
 import React from "react";
 import { FaArrowRightLong, FaBath, FaBed } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
+import { motion } from "framer-motion";
+import AllList from "./AllList";
 
 const Premium = () => {
   return (
@@ -22,10 +24,26 @@ const Premium = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <button className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer">
+          <a
+            href="/AllList"
+            className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer"
+          >
             See All Properties
-            <FaArrowRightLong />
-          </button>
+            <motion.div
+              initial={{
+                x: 0,
+              }}
+              animate={{
+                x: [0, 12, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+              }}
+            >
+              <FaArrowRightLong />
+            </motion.div>
+          </a>
         </div>
       </div>
       <ul className="md:grid grid-cols-2 xl:grid-cols-3">
@@ -61,10 +79,10 @@ const Premium = () => {
           </li>
         ))}
       </ul>
-      <button className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer md:hidden">
+      <a className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer md:hidden">
         See All Properties
         <FaArrowRightLong />
-      </button>
+      </a>
     </div>
   );
 };

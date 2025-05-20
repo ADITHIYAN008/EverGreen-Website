@@ -22,7 +22,6 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   user-select: black;
-  padding-left: 10px;
 }
 
 @layer utilities {
