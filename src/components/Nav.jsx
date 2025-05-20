@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoClose, IoEarOutline, IoEarthOutline, IoMenu } from "react-icons/io5";
+import EverGreenLogo from "../assets/EverGreen.png";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +63,7 @@ const Nav = () => {
       </nav>
       <nav className="text-primary lg:bg-center hidden md:block px-6 py-7 z-50 fixed items-center w-full justify-between">
         <div className="flex justify-between items-center">
-          <img className="w-[15rem]" src="src/assets/EverGreen.png" alt="" />
+          <img className="w-[15rem]" src={EverGreenLogo} alt="" />
           <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1 border border-secondary/40 mr-36">
             {tabs.map((tab) => {
               let href = "#";

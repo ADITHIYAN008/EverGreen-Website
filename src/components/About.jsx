@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import PlayIcon from "../assets/play.png";
+import OneImg from "../assets/one.jpg";
+import FourImg from "../assets/four.jpg";
+import TwoImg from "../assets/two.jpg";
+import ThreeImg from "../assets/three.jpg";
+import SixImg from "../assets/six.jpeg";
 
 const About = () => {
-  const images = [
-    "src/assets/six.jpeg",
-    "src/assets/two.jpg",
-    "src/assets/three.jpg",
-  ];
+  const images = [SixImg, TwoImg, ThreeImg];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -29,9 +31,9 @@ const About = () => {
         </h2>
         <div className="flex gap-3 md:gap-0 items-center cursor-pointer">
           <div className="w-[90px] h-auto rounded-full overflow-clip mx-[6%] relative cursor-pointer">
-            <img src="src/assets/one.jpg" alt="video-img" />
+            <img src={OneImg} alt="video-img" />
             <div className="absolute top-1/4 left-1/3 bg-primary rounded-full sm:top-[30%] sm:left-[40%] w-[25px] h-[25px] md:top-2 md:left-4 xl:top-4 xl:left-7">
-              <img className="p-2" src="src/assets/play.png" alt="play-icon" />
+              <img className="p-2" src={PlayIcon} alt="play-icon" />
             </div>
           </div>
           <p className="text-[10px] text-secondary/60">
@@ -74,7 +76,7 @@ const About = () => {
             </button>
           </div>
           <div className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl">
-            <img className="rounded-xl" src="src/assets/four.jpg" alt="" />
+            <img className="rounded-xl" src={FourImg} alt="" />
             <h2 className="mt-4 flex flex-col text-[14px] font-medium">
               Pricing Start at <span>$256K</span>
             </h2>
