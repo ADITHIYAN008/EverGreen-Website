@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import OneImg from "../assets/one.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -62,12 +63,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="cursor-pointer hover:underline" href="#">
+              <a className="cursor-pointer hover:underline" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className="cursor-pointer hover:underline" href="#">
+              <a className="cursor-pointer hover:underline" href="#property">
                 Properties
               </a>
             </li>
@@ -80,12 +81,16 @@ const Footer = () => {
           <h2 className="mt-8 mb-8 text-center">EverGreen</h2>
           <ul className="flex gap-6 text-[12px] justify-center">
             <li>
-              <a className="cursor-pointer hover:underline" href="#">
+              <Link
+                to="/AllList"
+                className="cursor-pointer hover:underline"
+                href="#"
+              >
                 Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="cursor-pointer hover:underline" href="#">
+              <a className="cursor-pointer hover:underline" href="#faq">
                 FAQ
               </a>
             </li>

@@ -7,7 +7,7 @@ const Properties = () => {
   return (
     <div className="text-secondary px-5">
       <div className="max-h-[18rem] rounded-3xl">
-        <ul className="grid pb-20 grid-cols-1 gap-6 md:grid-cols-3 md:gap-15 w-full">
+        <ul className="grid pb-20 grid-cols-1 gap-10 md:grid-cols-3 md:gap-15 w-full">
           {PROP_LIST.map((item, index) => (
             <li key={index}>
               <motion.img
@@ -39,7 +39,7 @@ const Properties = () => {
                   </span>
                 </h2>
               </div>
-              <div className="ml-2 mt-2">
+              <div className="ml-2 mb-4 mt-2">
                 <h2 className="font-semibold cursor-pointer text-[20px] md:text-xl">
                   {item.title}
                 </h2>
@@ -48,6 +48,20 @@ const Properties = () => {
                 <h3 className="text-[11px] md:text-[12px] mt-1">
                   {item.address}
                 </h3>
+              </div>
+              <div className="flex gap-3">
+                <a
+                  className="bg-green-400 text-[10px] flex items-center px-5 rounded-full cursor-pointer font-semibold"
+                  href="#"
+                >
+                  Buy Now
+                </a>
+                <a
+                  className="bg-secondary cursor-pointer text-[10px] text-primary  px-4 py-2 rounded-full"
+                  href="#"
+                >
+                  Contact Owner
+                </a>
               </div>
             </li>
           ))}

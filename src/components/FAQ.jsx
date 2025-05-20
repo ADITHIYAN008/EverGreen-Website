@@ -9,7 +9,7 @@ import { FAQ_LIST } from "@/constant/data";
 
 const FAQ = () => {
   return (
-    <div className="text-secondary px-3 mb-25 max-w-[1100px] mx-auto">
+    <div id="faq" className="text-secondary px-3 mb-25 max-w-[1100px] mx-auto">
       <div className="px-2 mb-8">
         <h2 className="text-[27px] md:text-4xl mt-10 font-semibold">
           Frequently asked questions
