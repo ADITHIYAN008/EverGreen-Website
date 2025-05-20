@@ -1,13 +1,14 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import OneImg from "../assets/one.jpg";
 
 const Footer = () => {
   return (
     <div id="contact" className="mb-10">
       <div className="relative">
         <div className="w-full relative h-[200px] overflow-clip">
-          <img src="src/assets/one.jpg" alt="" />
+          <img src={OneImg} alt="" />
           <div className="bg-black/50 absolute top-0 w-full h-full"></div>
         </div>
         <div className="absolute top-7 left-0 w-full">
