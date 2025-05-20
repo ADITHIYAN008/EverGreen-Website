@@ -79,9 +79,25 @@ const Premium = () => {
           </li>
         ))}
       </ul>
-      <a className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer md:hidden">
+      <a
+        href="/AllList"
+        className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl w-[12rem] mt-2 mx-auto gap-2 cursor-pointer md:hidden"
+      >
         See All Properties
-        <FaArrowRightLong />
+        <motion.div
+          initial={{
+            x: 0,
+          }}
+          animate={{
+            x: [0, 12, 0],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+          }}
+        >
+          <FaArrowRightLong />
+        </motion.div>
       </a>
     </div>
   );
