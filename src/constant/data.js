@@ -1,8 +1,16 @@
 import { Content } from "@radix-ui/react-accordion";
+import OneImg from "../assets/one.jpg";
+import TwoImg from "../assets/two.jpg";
+import ThreeImg from "../assets/three.jpg";
+import FourImg from "../assets/four.jpg";
+import Profile1 from "../assets/profile1.jpg";
+import Profile2 from "../assets/profile2.jpg";
+import Profile3 from "../assets/profile3.avif";
+import Profile4 from "../assets/profile4.avif";
 
 const PREMIUM_HOUSES = [
   {
-    url: "src/assets/one.jpg",
+    url: OneImg,
     beds: "5 Bedrooms",
     bathroom: "2 Bathroom",
     title: "The Pinnacle at Highland Park",
@@ -10,7 +18,7 @@ const PREMIUM_HOUSES = [
     address: "123 Maple Street, New York",
   },
   {
-    url: "src/assets/two.jpg",
+    url: TwoImg,
     beds: "5 Bedrooms",
     bathroom: "2 Bathroom",
     title: "The Pinnacle at Highland Park",
@@ -18,7 +26,7 @@ const PREMIUM_HOUSES = [
     address: "123 Maple Street, New York",
   },
   {
-    url: "src/assets/three.jpg",
+    url: ThreeImg,
     beds: "5 Bedrooms",
     bathroom: "2 Bathroom",
     title: "The Pinnacle at Highland Park",
@@ -26,7 +34,7 @@ const PREMIUM_HOUSES = [
     address: "123 Maple Street, New York",
   },
   {
-    url: "src/assets/four.jpg",
+    url: FourImg,
     beds: "5 Bedrooms",
     bathroom: "2 Bathroom",
     title: "The Pinnacle at Highland Park",
@@ -34,7 +42,7 @@ const PREMIUM_HOUSES = [
     address: "123 Maple Street, New York",
   },
   {
-    url: "src/assets/one.jpg",
+    url: OneImg,
     beds: "5 Bedrooms",
     bathroom: "2 Bathroom",
     title: "The Pinnacle at Highland Park",
@@ -42,7 +50,7 @@ const PREMIUM_HOUSES = [
     address: "123 Maple Street, New York",
   },
   {
-    url: "src/assets/two.jpg",
+    url: TwoImg,
     beds: "5 Bedrooms",
     bathroom: "2 Bathroom",
     title: "The Pinnacle at Highland Park",
@@ -86,28 +94,28 @@ const FAQ_LIST = [
 
 const CLIENTS = [
   {
-    avatar: "src/assets/profile1.jpg",
+    avatar: Profile1,
     name: "Sajibur Rahman",
     role: "UI/UX Designer",
     review:
       "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
   },
   {
-    avatar: "src/assets/profile2.jpg",
+    avatar: Profile2,
     name: "Sajibur Rahman",
     role: "UI/UX Designer",
     review:
       "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
   },
   {
-    avatar: "src/assets/profile3.avif",
+    avatar: Profile3,
     name: "Sajibur Rahman",
     role: "UI/UX Designer",
     review:
       "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
   },
   {
-    avatar: "src/assets/profile4.avif",
+    avatar: Profile4,
     name: "Sajibur Rahman",
     role: "UI/UX Designer",
     review:

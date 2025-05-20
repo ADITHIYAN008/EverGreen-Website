@@ -8,6 +8,10 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "./ui/card";
 import { CLIENTS } from "@/constant/data";
+import Profile1 from "../assets/profile1.jpg";
+import Profile2 from "../assets/profile2.jpg";
+import Profile3 from "../assets/profile3.avif";
+import Profile4 from "../assets/profile4.avif";
 
 const Testimonials = () => {
   return (
@@ -20,22 +24,22 @@ const Testimonials = () => {
           <div className="flex relative ">
             <img
               className="w-7 h-7 absolute rounded-full"
-              src="src/assets/profile1.jpg"
+              src={Profile1}
               alt=""
             />
             <img
               className="w-7 h-7 object-cover absolute left-5 rounded-full"
-              src="src/assets/profile2.jpg"
+              src={Profile2}
               alt=""
             />
             <img
               className="w-7 h-7 object-cover absolute left-10 rounded-full"
-              src="src/assets/profile3.avif"
+              src={Profile3}
               alt=""
             />
             <img
               className="w-7 object-cover  h-7 absolute left-15 rounded-full"
-              src="src/assets/profile4.avif"
+              src={Profile4}
               alt=""
             />
           </div>

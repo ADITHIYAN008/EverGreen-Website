@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import MapImg from "../assets/map.png";
 
 const Discover = () => {
   return (
@@ -8,7 +9,7 @@ const Discover = () => {
       <div className="flex justify-between w-full max-w-[1100px] mx-auto flex-col xl:flex lg:flex-row">
         <img
           className="rounded-2xl md:w-[300px] shadow-xl border border-secondary/40"
-          src="src/assets/map.png"
+          src={MapImg}
           alt=""
         />
         <div className="px-2">
