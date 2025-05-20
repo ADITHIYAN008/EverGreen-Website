@@ -4,6 +4,7 @@ import { FaArrowRightLong, FaBath, FaBed } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { motion } from "framer-motion";
 import AllList from "./AllList";
+import { Link } from "react-router-dom";
 
 const Premium = () => {
   return (
@@ -24,8 +25,8 @@ const Premium = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <a
-            href="/AllList"
+          <Link
+            to="/AllList"
             className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer"
           >
             See All Properties
@@ -43,7 +44,7 @@ const Premium = () => {
             >
               <FaArrowRightLong />
             </motion.div>
-          </a>
+          </Link>
         </div>
       </div>
       <ul className="md:grid grid-cols-2 xl:grid-cols-3">
@@ -79,8 +80,8 @@ const Premium = () => {
           </li>
         ))}
       </ul>
-      <a
-        href="/AllList"
+      <Link
+        to="/AllList"
         className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl w-[12rem] mt-2 mx-auto gap-2 cursor-pointer md:hidden"
       >
         See All Properties
@@ -98,7 +99,7 @@ const Premium = () => {
         >
           <FaArrowRightLong />
         </motion.div>
-      </a>
+      </Link>
     </div>
   );
 };
