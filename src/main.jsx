@@ -5,7 +5,7 @@ import App from "./App.jsx";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AllList from "./components/AllList";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollTop";
 
 createRoot(document.getElementById("root")).render(
   <Router>
