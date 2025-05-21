@@ -3,12 +3,32 @@ import { PROP_LIST } from "@/constant/data";
 import { FaBath, FaBed } from "react-icons/fa6";
 import { easeIn, motion } from "framer-motion";
 
-const Properties = () => {
+const Properties = ({ filters }) => {
+  const { looking, price, location, room } = filters;
+
+  const filtered = PROP_LIST.filter((item) => {
+    if (!looking) return true;
+    return item.type === looking;
+  })
+    .filter((item) => {
+      if (!price) return true;
+
+      return item.cost < price;
+    })
+    .filter((item) => {
+      if (!location) return true;
+      return item.city === location;
+    })
+    .filter((item) => {
+      if (!room) return true;
+      return item.bed == room;
+    });
+
   return (
     <div className="text-secondary px-5">
       <div className="max-h-[18rem] rounded-3xl">
         <ul className="grid pb-20 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-15 w-full">
-          {PROP_LIST.map((item, index) => (
+          {filtered.map((item, index) => (
             <li key={index}>
               <motion.img
                 initial={{

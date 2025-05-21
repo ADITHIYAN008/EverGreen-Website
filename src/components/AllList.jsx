@@ -3,12 +3,17 @@ import Properties from "./Properties";
 import { Box, MenuItem, TextField } from "@mui/material";
 
 const AllList = () => {
-  const [looking, setLooking] = useState();
-  const [price, setPrice] = useState();
-  const [location, setLocation] = useState();
-  const [room, setRooms] = useState();
+  const [looking, setLooking] = useState("");
+  const [price, setPrice] = useState("");
+  const [location, setLocation] = useState("");
+  const [room, setRooms] = useState("");
 
-  const data = [looking, price, location, room];
+  const handleReset = () => {
+    setLooking("");
+    setPrice("");
+    setLocation("");
+    setRooms("");
+  };
 
   const lookingFor = [
     {
@@ -43,8 +48,8 @@ const AllList = () => {
       label: "Under $500000",
     },
     {
-      value: "500001",
-      label: "Over $500000",
+      value: "5000000",
+      label: "All",
     },
   ];
   const locations = [
@@ -61,11 +66,15 @@ const AllList = () => {
       label: "Las Vegas",
     },
     {
-      value: "Sanfarancisco",
+      value: "Sanfrancisco",
       label: "San Francisco",
     },
   ];
   const rooms = [
+    {
+      value: "2",
+      label: "2 Rooms",
+    },
     {
       value: "3",
       label: "3 Rooms",
@@ -80,7 +89,7 @@ const AllList = () => {
     },
     {
       value: "6",
-      label: "More than 6",
+      label: "6 Rooms",
     },
   ];
   return (
@@ -92,86 +101,77 @@ const AllList = () => {
               <h2 className="text-2xl text-center mb-7 font-bold">
                 Find the best place
               </h2>
-              <div>
+              <>
                 <div className="mb-4">
                   <h3 className="text-sm mb-2 font-semibold">Looking for</h3>
                   <input
+                    onChange={(e) => setLooking(e.target.value.toLowerCase())}
+                    value={looking}
                     className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
                     type="text"
                     placeholder="Enter type"
                   />
+                  <ul className="text-[10px] flex gap-2 mt-2 text-secondary/30 ml-2">
+                    <li>House,</li>
+                    <li>Condo,</li>
+                    <li>Cottage,</li>
+                    <li>Villa</li>
+                  </ul>
                 </div>
                 <div className="mb-4">
                   <h3 className="text-sm mb-2 font-semibold">Price $</h3>
                   <input
+                    onChange={(e) => setPrice(e.target.value)}
+                    value={price}
                     className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
                     type="number"
                     placeholder="Price"
                   />
+                  <ul className="text-[8px] flex gap-2 mt-2 text-secondary/30 ml-2">
+                    <li>100000,</li>
+                    <li>200000,</li>
+                    <li>500000,</li>
+                    <li>1000000</li>
+                  </ul>
                 </div>
                 <div className="mb-4">
                   <h3 className="text-sm mb-2 font-semibold">Locations</h3>
                   <input
+                    onChange={(e) =>
+                      setLocation(e.target.value.trim().toLowerCase())
+                    }
+                    value={location}
                     className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
                     type="text"
                     placeholder="Location"
                   />
+                  <ul className="text-[7px] flex gap-2 mt-2 text-secondary/30 ml-2">
+                    <li>New York,</li>
+                    <li>Austin,</li>
+                    <li>Las Vegas,</li>
+                    <li>San Francisco</li>
+                  </ul>
                 </div>
                 <div className="mb-4">
                   <h3 className="text-sm mb-2 font-semibold">
                     Number of rooms
                   </h3>
                   <input
+                    onChange={(e) => setRooms(e.target.value)}
+                    value={room}
                     className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
                     type="text"
-                    placeholder="Eg.2 Bed rooms"
+                    placeholder="Eg.2"
                   />
                 </div>
-                <div className="mb-2">
-                  <h3 className="text-sm mb-2 font-semibold">New Arrivals</h3>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-sm">
-                      <input
-                        type="radio"
-                        className="size-3 mr-2"
-                        name="myRadio"
-                        value="all"
-                      />
-                      All
-                    </label>
-                    <label className="text-sm">
-                      <input
-                        type="radio"
-                        className="size-3 mr-2"
-                        name="myRadio"
-                        value="7 days"
-                      />
-                      Last 7 days
-                    </label>
-                    <label className="text-sm">
-                      <input
-                        type="radio"
-                        className="size-3 mr-2"
-                        name="myRadio"
-                        value="15 days"
-                      />
-                      Last 15 days
-                    </label>
-                    <label className="text-sm">
-                      <input
-                        type="radio"
-                        className="size-3 mr-2"
-                        name="myRadio"
-                        value="30 days"
-                      />
-                      Last 30 days
-                    </label>
-                  </div>
-                </div>
-                <button className="bg-secondary text-primary px-5 py-3 rounded-3xl mt-4 text-[13px] cursor-pointer w-full">
-                  Search Properties
+
+                <button
+                  onClick={handleReset}
+                  className="bg-secondary text-primary px-5 py-3 rounded-3xl mt-4 text-[13px] cursor-pointer w-full"
+                >
+                  Reset All
                 </button>
-              </div>
+              </>
             </div>
           </div>
         </div>
@@ -192,9 +192,9 @@ const AllList = () => {
             <TextField
               id="outlined-select-currency"
               select
+              value={looking}
               label="Looking for"
               onChange={(e) => setLooking(e.target.value)}
-              defaultValue="EUR"
               size="small"
               sx={{
                 height: 1,
@@ -219,10 +219,10 @@ const AllList = () => {
             <TextField
               id="outlined-select-currency"
               select
+              value={price}
               onChange={(e) => setPrice(e.target.value)}
               label="Price$"
               size="small"
-              defaultValue="EUR"
             >
               {prices.map((option) => (
                 <MenuItem
@@ -242,9 +242,9 @@ const AllList = () => {
             <TextField
               id="outlined-select-currency"
               select
+              value={location}
               onChange={(e) => setLocation(e.target.value)}
               label="Location"
-              defaultValue="EUR"
               size="small"
               sx={{
                 height: 1,
@@ -268,9 +268,9 @@ const AllList = () => {
             <TextField
               id="outlined-select-currency"
               select
+              value={room}
               onChange={(e) => setRooms(e.target.value)}
               label="Number of rooms"
-              defaultValue="EUR"
               size="small"
               sx={{
                 height: 1,
@@ -290,15 +290,23 @@ const AllList = () => {
               ))}
             </TextField>
           </div>
-          <ul className="text-secondary mt-4">
-            {data.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <button
+            onClick={handleReset}
+            className="text-primary bg-secondary w-[8rem] h-10 ml-36 mt-4 rounded-3xl"
+          >
+            Reset
+          </button>
         </Box>
       </div>
       <div className="pt-4 md:pt-10 md:ml-[300px]">
-        <Properties />
+        <Properties
+          filters={{
+            looking,
+            price,
+            location,
+            room,
+          }}
+        />
       </div>
     </div>
   );
