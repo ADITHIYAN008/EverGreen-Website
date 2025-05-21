@@ -1,10 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import Properties from "./Properties";
+import { Box, MenuItem, TextField } from "@mui/material";
 
 const AllList = () => {
+  const [looking, setLooking] = useState();
+  const [price, setPrice] = useState();
+  const [location, setLocation] = useState();
+  const [room, setRooms] = useState();
+
+  const data = [looking, price, location, room];
+
+  const lookingFor = [
+    {
+      value: "House",
+      label: "House",
+    },
+    {
+      value: "Condo",
+      label: "Condo",
+    },
+    {
+      value: "Cottage",
+      label: "Cottage",
+    },
+    {
+      value: "Villa",
+      label: "Villa",
+    },
+  ];
+
+  const prices = [
+    {
+      value: "100000",
+      label: "Under $100000",
+    },
+    {
+      value: "200000",
+      label: "Under $200000",
+    },
+    {
+      value: "500000",
+      label: "Under $500000",
+    },
+    {
+      value: "500001",
+      label: "Over $500000",
+    },
+  ];
+  const locations = [
+    {
+      value: "Newyork",
+      label: "Newyork",
+    },
+    {
+      value: "Austin",
+      label: "Austin",
+    },
+    {
+      value: "Lasvegas",
+      label: "Las Vegas",
+    },
+    {
+      value: "Sanfarancisco",
+      label: "San Francisco",
+    },
+  ];
+  const rooms = [
+    {
+      value: "3",
+      label: "3 Rooms",
+    },
+    {
+      value: "4",
+      label: "4 Rooms",
+    },
+    {
+      value: "5",
+      label: "5 Rooms",
+    },
+    {
+      value: "6",
+      label: "More than 6",
+    },
+  ];
   return (
-    <div className="flex gap-10">
-      <div className="fixed h-full">
+    <div className="flex flex-col md:gap-10">
+      <div className="md:fixed md:h-full">
         <div className="md:max-w-[300px] hidden md:block md:py-10">
           <div className="flex justify-center">
             <div className="w-[90%] px-6 py-6 rounded-3xl z-40 h-auto bg-primary border  border-gray-400/70   text-secondary">
@@ -94,8 +175,129 @@ const AllList = () => {
             </div>
           </div>
         </div>
+        <Box
+          className="grid md:hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
+          component="form"
+          sx={{
+            "& .MuiTextField-root": {
+              mt: 2,
+              ml: 2,
+              width: "14ch",
+            },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <div>
+            <TextField
+              id="outlined-select-currency"
+              select
+              label="Looking for"
+              onChange={(e) => setLooking(e.target.value)}
+              defaultValue="EUR"
+              size="small"
+              sx={{
+                height: 1,
+                fontSize: 15,
+              }}
+            >
+              {lookingFor.map((option) => (
+                <MenuItem
+                  sx={{
+                    height: 2,
+                    fontSize: 13,
+                  }}
+                  key={option.value}
+                  value={option.value}
+                >
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </div>
+          <div>
+            <TextField
+              id="outlined-select-currency"
+              select
+              onChange={(e) => setPrice(e.target.value)}
+              label="Price$"
+              size="small"
+              defaultValue="EUR"
+            >
+              {prices.map((option) => (
+                <MenuItem
+                  sx={{
+                    height: 2,
+                    fontSize: 13,
+                  }}
+                  key={option.value}
+                  value={option.value}
+                >
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </div>
+          <div>
+            <TextField
+              id="outlined-select-currency"
+              select
+              onChange={(e) => setLocation(e.target.value)}
+              label="Location"
+              defaultValue="EUR"
+              size="small"
+              sx={{
+                height: 1,
+              }}
+            >
+              {locations.map((option) => (
+                <MenuItem
+                  sx={{
+                    height: 2,
+                    fontSize: 13,
+                  }}
+                  key={option.value}
+                  value={option.value}
+                >
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </div>
+          <div>
+            <TextField
+              id="outlined-select-currency"
+              select
+              onChange={(e) => setRooms(e.target.value)}
+              label="Number of rooms"
+              defaultValue="EUR"
+              size="small"
+              sx={{
+                height: 1,
+              }}
+            >
+              {rooms.map((option) => (
+                <MenuItem
+                  sx={{
+                    height: 2,
+                    fontSize: 13,
+                  }}
+                  key={option.value}
+                  value={option.value}
+                >
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </div>
+          <ul className="text-secondary mt-4">
+            {data.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </Box>
       </div>
-      <div className="pt-17 md:pt-10 md:ml-[300px]">
+      <div className="pt-4 md:pt-10 md:ml-[300px]">
         <Properties />
       </div>
     </div>

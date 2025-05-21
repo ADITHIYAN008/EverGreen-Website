@@ -7,7 +7,7 @@ const Properties = () => {
   return (
     <div className="text-secondary px-5">
       <div className="max-h-[18rem] rounded-3xl">
-        <ul className="grid pb-20 grid-cols-1 gap-10 md:grid-cols-3 md:gap-15 w-full">
+        <ul className="grid pb-20 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-15 w-full">
           {PROP_LIST.map((item, index) => (
             <li key={index}>
               <motion.img
