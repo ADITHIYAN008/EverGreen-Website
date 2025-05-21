@@ -2,7 +2,7 @@ import { PREMIUM_HOUSES } from "@/constant/data";
 import React from "react";
 import { FaArrowRightLong, FaBath, FaBed } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import AllList from "./AllList";
 import { Link } from "react-router-dom";
 
@@ -51,7 +51,17 @@ const Premium = () => {
         {PREMIUM_HOUSES.map((item, index) => (
           <li className="mb-12" key={index}>
             <div className="relative">
-              <img
+              <motion.img
+                initial={{
+                  scale: 1,
+                }}
+                whileHover={{
+                  scale: 1.02,
+                }}
+                transition={{
+                  duration: 0.3,
+                  ease: easeIn,
+                }}
                 className="rounded-3xl cursor-pointer md:max-w-[350px] md:min-h-[300px] lg:h-[400px] lg:max-w-[450px] md:object-cover xl:max-w-[320px] xl:max-h-[200px]"
                 src={item.url}
                 alt={item.title}

@@ -7,6 +7,8 @@ import FourImg from "../assets/four.jpg";
 import TwoImg from "../assets/two.jpg";
 import ThreeImg from "../assets/three.jpg";
 import SixImg from "../assets/six.jpeg";
+import { Link } from "react-router-dom";
+import CounterList from "./CounterList";
 
 const About = () => {
   const images = [SixImg, TwoImg, ThreeImg];
@@ -45,7 +47,7 @@ const About = () => {
       <div className="flex items-end flex-col xl:flex-row gap-2">
         <div className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative border border-secondary/30 rounded-2xl">
           <img
-            className="rounded-2xl lg:h-full lg:object-cover md:mb-7 w-full"
+            className="rounded-2xl lg:h-full lg:object-cover w-full"
             src={images[currentIndex]}
             alt="Main"
           />
@@ -80,7 +82,10 @@ const About = () => {
             <h2 className="mt-4 flex flex-col text-[14px] font-medium">
               Pricing Start at <span>$256K</span>
             </h2>
-            <button className="flex bg-secondary text-primary items-center text-[10px] px-4 lg:mt-2 py-3 rounded-3xl mt-5 mx-auto mb-3 gap-2 cursor-pointer">
+            <Link
+              to="/AllList"
+              className="flex bg-secondary text-primary items-center text-[10px] px-4 lg:mt-2 py-3 rounded-3xl mt-5 mx-auto w-[10rem] mb-3 gap-2 cursor-pointer"
+            >
               Explore Properties{" "}
               <motion.div
                 initial={{
@@ -96,24 +101,11 @@ const About = () => {
               >
                 <FaArrowRightLong />
               </motion.div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
-      <ul className="mt-7 grid grid-cols-2 text-center">
-        <li className="flex flex-col text-4xl border-r border-secondary/20 mb-8">
-          100% <span className="text-xs mt-2">Satisfactions Clients</span>
-        </li>
-        <li className="flex flex-col text-4xl">
-          500+ <span className="text-xs mt-2">Property sells</span>
-        </li>
-        <li className="flex flex-col text-4xl border-secondary/20 border-r">
-          150+ <span className="text-xs mt-2">Countries & Cities</span>
-        </li>
-        <li className="flex flex-col text-4xl">
-          2,00+ <span className="text-xs mt-2">Postive reviews</span>
-        </li>
-      </ul>
+      <CounterList />
     </div>
   );
 };

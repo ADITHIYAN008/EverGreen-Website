@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import HeroImg from "../assets/two.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const textButton = ["House", "Appartment", "Residential"];
@@ -144,9 +145,12 @@ const HeroSection = () => {
                         </button>
                       </div>
                     </div>
-                    <button className="bg-secondary text-primary px-5 py-3 rounded-3xl mt-4 text-[13px] cursor-pointer">
+                    <Link
+                      to="/AllList"
+                      className="bg-secondary text-primary px-5 py-3 rounded-3xl mt-4 text-[13px] cursor-pointer"
+                    >
                       Search Properties
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -203,7 +207,7 @@ const HeroSection = () => {
                   placeholder="Eg.2 Bed rooms"
                 />
               </div>
-              <div className="mb-2 mt-5">
+              <div className="mb-8 mt-5">
                 <h3 className="text-sm mb-3">Filter:</h3>
                 <div className="flex gap-1">
                   <button className="text-[12px] border border-gray-300 focus-within:bg-gray-300/60  px-3 py-1 rounded-full">
@@ -220,9 +224,12 @@ const HeroSection = () => {
                   </button>
                 </div>
               </div>
-              <button className="bg-secondary text-primary px-5 py-3 rounded-3xl mt-4 text-[13px] cursor-pointer w-full">
+              <Link
+                to="/AllList"
+                className="bg-secondary text-primary px-5 py-3 rounded-3xl text-[13px] cursor-pointer ml-18 w-full"
+              >
                 Search Properties
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>

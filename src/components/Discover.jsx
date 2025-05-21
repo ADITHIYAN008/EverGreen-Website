@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import MapImg from "../assets/map.png";
+import { Link } from "react-router-dom";
 
 const Discover = () => {
   return (
@@ -20,7 +21,10 @@ const Discover = () => {
             From minimalist to compact solutions, small spaces inspire big
             ideas, proving that you don't need much room.
           </p>
-          <button className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-5 mx-auto md:mx-0 gap-2 cursor-pointer">
+          <Link
+            to="/AllList"
+            className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-5 mx-auto md:mx-0 w-[14rem] gap-2 cursor-pointer"
+          >
             Find Nearest Properties{" "}
             <motion.div
               initial={{
@@ -36,7 +40,7 @@ const Discover = () => {
             >
               <FaArrowRightLong />
             </motion.div>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
