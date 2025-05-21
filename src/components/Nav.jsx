@@ -61,10 +61,10 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-      <nav className="text-primary lg:bg-center hidden md:block px-6 py-7 z-50 fixed items-center w-full justify-between">
+      <nav className="text-primary lg:bg-center hidden md:block md:w-screen px-6 py-7 z-50 fixed items-center w-full justify-between">
         <div className="flex justify-between items-center">
-          <img className="w-[15rem]" src={EverGreenLogo} alt="" />
-          <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1 border border-secondary/40 mr-36">
+          <img className="lg:w-[15rem] w-[10rem]" src={EverGreenLogo} alt="" />
+          <div className="flex bg-white/20 backdrop-blur-2xl items-center rounded-full px-1 py-1 border border-secondary/40 lg:mr-20">
             {tabs.map((tab) => {
               let href = "#";
 

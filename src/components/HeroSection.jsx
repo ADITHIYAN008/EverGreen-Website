@@ -17,7 +17,7 @@ const HeroSection = () => {
     <>
       <div id="home" className="relative w-screen pb-1">
         <img
-          className="min-w-screen md:max-h-screen md:object-cover min-h-[40rem] object-cover"
+          className="min-w-screen md:max-h-screen md:object-cover md:min-h-[53rem] min-h-[40rem] object-cover"
           src={HeroImg}
           alt="hero-image"
         />
