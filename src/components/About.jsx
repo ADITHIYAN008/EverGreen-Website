@@ -62,7 +62,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className="flex md:flex-col gap-2">
+        <div className="flex md:flex-row lg:flex-col gap-2">
           <div className="w-1/2 h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl">
             <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center lg:mt-10">
               Big things can happen in small spaces.

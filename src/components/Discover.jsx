@@ -6,7 +6,7 @@ import MapImg from "../assets/map.png";
 const Discover = () => {
   return (
     <div className="text-secondary lg:justify-between lg:px-15 px-3 py-5 md:flex md:gap-3 bg-secondary/5">
-      <div className="flex justify-between w-full max-w-[1100px] mx-auto flex-col xl:flex lg:flex-row">
+      <div className="flex justify-between w-full max-w-[1100px] mx-auto flex-col md:flex-row md:gap-10 xl:flex lg:flex-row">
         <img
           className="rounded-2xl md:w-[300px] shadow-xl border border-secondary/40"
           src={MapImg}
