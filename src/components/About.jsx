@@ -65,7 +65,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex md:flex-row lg:flex-col gap-2">
-          <div className="w-1/2 h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl">
+          <div className="w-1/2 text-center h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl">
             <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center lg:mt-10">
               Big things can happen in small spaces.
             </h3>
@@ -73,9 +73,12 @@ const About = () => {
               With thoughtful design and smart organization, you can maximize
               every inch, making room for creativity
             </p>
-            <button className="text-[10px] mx-auto w-full bg-primary px-4 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border hover:bg-secondary hover:text-primary hover:border-primary cursor-pointer transition-all duration-500 border-secondary/30">
+            <Link
+              to="/house"
+              className="text-[10px] w-full mx-auto  bg-primary px-10 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border hover:bg-secondary hover:text-primary hover:border-primary cursor-pointer transition-all duration-500 border-secondary/30"
+            >
               Details
-            </button>
+            </Link>
           </div>
           <div className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl">
             <img className="rounded-xl" src={FourImg} alt="" />
