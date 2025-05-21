@@ -49,14 +49,38 @@ const Nav = () => {
             }`}
           >
             <ul className="flex flex-col gap-11 px-9 py-12">
-              {["Home", "About Us", "Property List", "Contact Us"].map(
-                (item, index) => (
-                  <div key={index} className="flex justify-between">
-                    <li className="hover:underline duration-200">{item}</li>
-                    <FaArrowRightLong />
-                  </div>
-                )
-              )}
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="flex justify-between"
+              >
+                <li className="hover:underline duration-200">Home</li>
+                <FaArrowRightLong />
+              </a>
+              <a
+                href="#about"
+                onClick={() => setIsOpen(false)}
+                className="flex justify-between"
+              >
+                <li className="hover:underline duration-200">About Us</li>
+                <FaArrowRightLong />
+              </a>
+              <a
+                href="#property"
+                onClick={() => setIsOpen(false)}
+                className="flex justify-between"
+              >
+                <li className="hover:underline duration-200">Property List</li>
+                <FaArrowRightLong />
+              </a>
+              <a
+                href="#contact"
+                onClick={() => setIsOpen(false)}
+                className="flex justify-between"
+              >
+                <li className="hover:underline duration-200">Contact Us</li>
+                <FaArrowRightLong />
+              </a>
             </ul>
           </div>
         </div>
