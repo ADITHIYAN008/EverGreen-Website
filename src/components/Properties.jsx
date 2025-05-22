@@ -2,6 +2,8 @@ import React from "react";
 import { PROP_LIST } from "@/constant/data";
 import { FaBath, FaBed } from "react-icons/fa6";
 import { easeIn, motion } from "framer-motion";
+import { House } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Properties = ({ filters }) => {
   const { looking, price, location, room } = filters;
@@ -23,28 +25,50 @@ const Properties = ({ filters }) => {
       if (!room) return true;
       return item.bed == room;
     });
-
   return (
     <div className="text-secondary px-5">
       <div className="max-h-[18rem] rounded-3xl">
         <ul className="grid pb-20 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-15 w-full">
           {filtered.map((item, index) => (
             <li key={index}>
-              <motion.img
-                initial={{
-                  scale: 1,
+              <Link
+                to="/house"
+                state={{
+                  relImg: {
+                    ImgOne: item.one,
+                    ImgTwo: item.two,
+                    ImgThree: item.three,
+                    ImgFour: item.four,
+                    ImgFive: item.five,
+                    ImgSix: item.six,
+                  },
+                  imgData: {
+                    Url: item.url,
+                    Title: item.title,
+                    Type: item.type,
+                    beds: item.bed,
+                    bathroom: item.bathrooms,
+                    price: item.price,
+                    address: item.address,
+                  },
                 }}
-                whileHover={{
-                  scale: 1.02,
-                }}
-                transition={{
-                  duration: 0.3,
-                  ease: easeIn,
-                }}
-                className="w-[24rem] md:w-[26rem] cursor-pointer md:h-[18rem] object-cover max-h-[15rem] object-center rounded-2xl"
-                src={item.url}
-                alt={item.title}
-              />
+              >
+                <motion.img
+                  initial={{
+                    scale: 1,
+                  }}
+                  whileHover={{
+                    scale: 1.02,
+                  }}
+                  transition={{
+                    duration: 0.3,
+                    ease: easeIn,
+                  }}
+                  className="w-[24rem] md:w-[26rem] cursor-pointer md:h-[18rem] object-cover max-h-[15rem] object-center rounded-2xl"
+                  src={item.url}
+                  alt={item.title}
+                />
+              </Link>
               <div className="flex text-[15px] gap-3 md:gap-5 ml-2 mt-4">
                 <h2 className="flex gap-2 items-center">
                   <FaBed size={10} />{" "}

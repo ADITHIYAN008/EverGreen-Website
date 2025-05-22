@@ -5,10 +5,15 @@ import ImgThree from "../assets/one.jpg";
 import ImgFour from "../assets/four.jpg";
 import ImgFive from "../assets/five.jpg";
 import { FaBath, FaBed } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
+import { PROP_LIST } from "@/constant/data";
 
 const House = () => {
-  const [imgUrl, setImgUrl] = useState(ImgOne);
-  const [activeImg, setActiveTab] = useState(ImgOne);
+  const { state } = useLocation();
+  const { imgData, relImg } = state;
+
+  const [imgUrl, setImgUrl] = useState(relImg.ImgOne);
+  const [activeImg, setActiveTab] = useState(relImg.ImgOne);
 
   return (
     <div className="text-secondary">
@@ -22,65 +27,65 @@ const House = () => {
           <div className="w-11 h-11 cursor-pointer bg-secondary rounded-xl">
             <img
               onClick={() => {
-                setImgUrl(ImgOne);
-                setActiveTab(ImgOne);
+                setImgUrl(relImg.ImgOne);
+                setActiveTab(relImg.ImgOne);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == ImgOne ? "border border-secondary" : ""
+                activeImg == relImg.ImgOne ? "border border-secondary" : ""
               }`}
-              src={ImgOne}
+              src={relImg.ImgOne}
               alt=""
             />
           </div>
           <div className="w-11 h-11 cursor-pointer bg-secondary rounded-xl">
             <img
               onClick={() => {
-                setImgUrl(ImgTwo);
-                setActiveTab(ImgTwo);
+                setImgUrl(relImg.ImgTwo);
+                setActiveTab(relImg.ImgTwo);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == ImgTwo ? "border border-secondary" : ""
+                activeImg == relImg.ImgTwo ? "border border-secondary" : ""
               }`}
-              src={ImgTwo}
+              src={relImg.ImgTwo}
               alt=""
             />
           </div>
           <div className="w-11 h-11 cursor-pointer bg-secondary rounded-xl">
             <img
               onClick={() => {
-                setImgUrl(ImgThree);
-                setActiveTab(ImgThree);
+                setImgUrl(relImg.ImgThree);
+                setActiveTab(relImg.ImgThree);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == ImgThree ? "border border-secondary" : ""
+                activeImg == relImg.ImgThree ? "border border-secondary" : ""
               }`}
-              src={ImgThree}
+              src={relImg.ImgThree}
               alt=""
             />
           </div>
           <div className="w-11 h-11 bg-secondary rounded-xl">
             <img
               onClick={() => {
-                setImgUrl(ImgFour);
-                setActiveTab(ImgFour);
+                setImgUrl(relImg.ImgFour);
+                setActiveTab(relImg.ImgFour);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == ImgFour ? "border border-secondary" : ""
+                activeImg == relImg.ImgFour ? "border border-secondary" : ""
               }`}
-              src={ImgFour}
+              src={relImg.ImgFour}
               alt=""
             />
           </div>
           <div className="w-11 h-11 cursor-pointer bg-secondary rounded-xl">
             <img
               onClick={() => {
-                setImgUrl(ImgFive);
-                setActiveTab(ImgFive);
+                setImgUrl(relImg.ImgFive);
+                setActiveTab(relImg.ImgFive);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == ImgFive ? "border border-secondary" : ""
+                activeImg == relImg.ImgFive ? "border border-secondary" : ""
               }`}
-              src={ImgFive}
+              src={relImg.ImgFive}
               alt=""
             />
           </div>
@@ -88,26 +93,24 @@ const House = () => {
       </div>
       <div className="px-6 mt-5">
         <div>
-          <h2 className="text-[18px] mb-1 font-semibold">
-            The Pinnacle at Highland Park
-          </h2>
+          <h2 className="text-[18px] mb-1 font-semibold">{imgData.Title}</h2>
         </div>
         <div className="flex gap-7 mb-1 items-center">
           <h3 className="text-[12px]">
-            Type: <span className="font-semibold">House</span>
+            Type: <span className="font-semibold">{imgData.Type}</span>
           </h3>
           <div className="flex mt-2 mb-2 items-center gap-2">
             <FaBed size={13} />
-            <span className="text-[11px]">5 Bedrooms</span>
+            <span className="text-[11px]">{imgData.beds} Bedrooms</span>
           </div>
           <div className="flex items-center gap-2">
             <FaBath size={13} />
-            <span className="text-[11px]">2 Bathrooms</span>
+            <span className="text-[11px]">{imgData.bathroom}</span>
           </div>
         </div>
         <div className="flex flex-col">
-          <h4 className="text-lg mb-2 font-semibold">$4,56798.00</h4>
-          <h3 className="text-[12px] ">123 Maple Street, New York</h3>
+          <h4 className="text-lg mb-2 font-semibold">{imgData.price}</h4>
+          <h3 className="text-[12px] ">{imgData.address}</h3>
         </div>
         <div className="mt-4 flex gap-4 mb-8">
           <a
@@ -124,142 +127,42 @@ const House = () => {
           </a>
         </div>
       </div>
-      <div className="px-6  mt-6">
+      <div className="px-6 mt-6">
         <h3 className="text-[14px] font-semibold">Recommendations for you</h3>
-        <div className="overflow-x-auto no-scrollbar">
-          <div className="flex flex-nowrap w-max space-x-4 mt-5">
-            <div className="w-[9rem]">
-              <div className="w-[9rem] h-[8rem] rounded-2xl bg-secondary">
-                <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src={ImgOne}
-                  alt=""
-                />
-              </div>
-              <div className="ml-2">
-                <h2 className="text-[11px] mt-2 font-semibold">
-                  The Pinnacle at Highland Park
-                </h2>
-                <div className="mt-1 flex gap-3">
-                  <div className="flex items-center gap-1">
-                    <FaBed size={10} />
-                    <span className="text-[8px]">5 Bedrooms</span>
+        <div className="overflow-x-auto mt-5 no-scrollbar">
+          <div className="flex flex-nowrap w-max space-x-4">
+            <ul className="flex w-max space-x-4 ">
+              {PROP_LIST.filter(
+                (item) => item.type === imgData.Type && item.url !== imgData.Url
+              ).map((item, index) => (
+                <li className="w-[9rem]" key={index}>
+                  <div className="w-[9rem] h-[8rem] rounded-2xl bg-secondary">
+                    <img
+                      className="w-full h-full object-cover rounded-xl"
+                      src={item.url}
+                      alt={item.title}
+                    />
                   </div>
-                  <div className="flex items-center gap-1">
-                    <FaBath size={10} />
-                    <span className="text-[8px]">2 Bathrooms</span>
-                  </div>
-                </div>
-                <h3 className="text-sm mt-2 font-semibold">$4,56798.00</h3>
-                <h4 className="text-[8px] mt-1">123 Maple Street, New York</h4>
-              </div>
-            </div>
-            <div className="w-[9rem]">
-              <div className="w-[9rem] h-[8rem] rounded-2xl bg-secondary">
-                <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src={ImgTwo}
-                  alt=""
-                />
-                <div className="ml-2">
-                  <h2 className="text-[11px] mt-2 font-semibold">
-                    The Pinnacle at Highland Park
-                  </h2>
-                  <div className="mt-1 flex gap-3">
-                    <div className="flex items-center gap-1">
-                      <FaBed size={10} />
-                      <span className="text-[8px]">5 Bedrooms</span>
+                  <div className="ml-2">
+                    <h2 className="text-[11px] mt-2 font-semibold">
+                      {item.title}
+                    </h2>
+                    <div className="mt-1 flex gap-3">
+                      <div className="flex items-center gap-1">
+                        <FaBed size={10} />
+                        <span className="text-[8px]">{item.beds}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <FaBath size={10} />
+                        <span className="text-[8px]">{item.bathrooms}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <FaBath size={10} />
-                      <span className="text-[8px]">2 Bathrooms</span>
-                    </div>
+                    <h3 className="text-sm mt-2 font-semibold">{item.price}</h3>
+                    <h4 className="text-[8px] mt-1">{item.address}</h4>
                   </div>
-                  <h3 className="text-sm mt-2 font-semibold">$4,56798.00</h3>
-                  <h4 className="text-[8px] mt-1">
-                    123 Maple Street, New York
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="w-[9rem]">
-              <div className="w-[9rem] h-[8rem] rounded-2xl bg-secondary">
-                <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src={ImgThree}
-                  alt=""
-                />
-              </div>
-              <div className="ml-2">
-                <h2 className="text-[11px] mt-2 font-semibold">
-                  The Pinnacle at Highland Park
-                </h2>
-                <div className="mt-1 flex gap-3">
-                  <div className="flex items-center gap-1">
-                    <FaBed size={10} />
-                    <span className="text-[8px]">5 Bedrooms</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <FaBath size={10} />
-                    <span className="text-[8px]">2 Bathrooms</span>
-                  </div>
-                </div>
-                <h3 className="text-sm mt-2 font-semibold">$4,56798.00</h3>
-                <h4 className="text-[8px] mt-1">123 Maple Street, New York</h4>
-              </div>
-            </div>
-            <div className="w-[9rem]">
-              <div className="w-[9rem] h-[8rem] rounded-2xl bg-secondary">
-                <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src={ImgFour}
-                  alt=""
-                />
-              </div>
-              <div className="ml-2">
-                <h2 className="text-[11px] mt-2 font-semibold">
-                  The Pinnacle at Highland Park
-                </h2>
-                <div className="mt-1 flex gap-3">
-                  <div className="flex items-center gap-1">
-                    <FaBed size={10} />
-                    <span className="text-[8px]">5 Bedrooms</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <FaBath size={10} />
-                    <span className="text-[8px]">2 Bathrooms</span>
-                  </div>
-                </div>
-                <h3 className="text-sm mt-2 font-semibold">$4,56798.00</h3>
-                <h4 className="text-[8px] mt-1">123 Maple Street, New York</h4>
-              </div>
-            </div>
-            <div className="w-[9rem]">
-              <div className="w-[9rem] h-[8rem] rounded-2xl bg-secondary">
-                <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src={ImgFive}
-                  alt=""
-                />
-              </div>
-              <div className="ml-2">
-                <h2 className="text-[11px] mt-2 font-semibold">
-                  The Pinnacle at Highland Park
-                </h2>
-                <div className="mt-1 flex gap-3">
-                  <div className="flex items-center gap-1">
-                    <FaBed size={10} />
-                    <span className="text-[8px]">5 Bedrooms</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <FaBath size={10} />
-                    <span className="text-[8px]">2 Bathrooms</span>
-                  </div>
-                </div>
-                <h3 className="text-sm mt-2 font-semibold">$4,56798.00</h3>
-                <h4 className="text-[8px] mt-1">123 Maple Street, New York</h4>
-              </div>
-            </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
