@@ -32,7 +32,7 @@ const Properties = ({ filters }) => {
           {filtered.map((item, index) => (
             <li key={index}>
               <Link
-                to="/house"
+                to={`/house/${item.id}`}
                 state={{
                   relImg: {
                     ImgOne: item.one,
