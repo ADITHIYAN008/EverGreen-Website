@@ -43,6 +43,7 @@ const Properties = ({ filters }) => {
                     ImgSix: item.six,
                   },
                   imgData: {
+                    Id: item.id,
                     Url: item.url,
                     Title: item.title,
                     Type: item.type,

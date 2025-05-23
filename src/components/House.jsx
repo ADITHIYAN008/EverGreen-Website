@@ -26,7 +26,7 @@ const House = () => {
     <div className="text-secondary max-w-[1100px] mx-auto">
       <div className="mt-6">
         <img
-          className="sm:w-[90%] sm:min-h-[500px] w-[90%] min-w-[300px] border border-secondary/50 lg:w-[95%] lg:min-h-[500px] lg:max-h-[700px] min-h-[250px]  mx-auto rounded-3xl"
+          className="sm:w-[90%] sm:min-h-[500px] w-[90%] min-w-[300px] border object-cover border-secondary/50 lg:w-[95%] lg:min-h-[500px] lg:max-h-[600px] min-h-[250px]  mx-auto rounded-3xl"
           src={imgUrl}
           alt=""
         />
@@ -128,12 +128,14 @@ const House = () => {
             <DrawerTrigger className="text-secondary  px-4 py-2 text-[12px] bg-green-400 rounded-3xl">
               Buy Now
             </DrawerTrigger>
-            <DrawerContent className="bg-primary text-secondary">
+            <DrawerContent className="bg-primary text-secondary max-w-[1100px] mx-auto">
               <DrawerHeader>
-                <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                <DrawerTitle className=" lg:text-3xl lg:ml-5">
+                  Are you absolutely sure?
+                </DrawerTitle>
                 <DrawerDescription className="mt-2 relative flex flex-row justify-between">
                   <img
-                    className="absolute w-[10rem] -left-2 -top-2 -z-50 opacity-30"
+                    className="absolute sm:hidden w-[10rem] -left-2 -top-2 -z-50 opacity-30"
                     src={Logo}
                     alt=""
                   />
@@ -182,12 +184,15 @@ const House = () => {
             </DrawerContent>
           </Drawer>
 
-          <a
+          <Link
+            to={`/owner/${imgData.Id}`}
+            state={{
+              ImgId: imgData.Id,
+            }}
             className="bg-secondary text-primary px-3 py-2 rounded-2xl border text-[11px] lg:text-[16px] lg:px-5 hover:bg-transparent hover:text-secondary hover:border transition-all duration-300 ease-in"
-            href="#"
           >
             Contact Owner
-          </a>
+          </Link>
         </div>
       </div>
       <div className="px-6 mt-6">

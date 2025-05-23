@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AllList from "./components/AllList";
 import ScrollToTop from "./components/ScrollTop";
 import House from "./components/House";
-import DrawerDemo from "./components/DrawerDemo";
+import OwnerDetails from "./components/OwnerDetails";
 
 createRoot(document.getElementById("root")).render(
   <Router>
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/AllList" element={<AllList />} />
         <Route path="/House/:id" element={<House />} />
-        <Route path="/drawer" element={<DrawerDemo />} />
+        <Route path="/owner/:id" element={<OwnerDetails />} />
       </Routes>
     </StrictMode>
   </Router>

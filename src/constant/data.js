@@ -126,6 +126,13 @@ const CLIENTS = [
 const PROP_LIST = [
   {
     id: 1,
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "John Carter",
+    email: "john.carter@example.com",
+    phone: "+1 202-555-0143",
+    profileAddress: "123 Elm Street, Los Angeles, CA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/a5ae7740485ea6316f6467ed5a0e215d-cc_ft_1344.webp",
     one: "https://photos.zillowstatic.com/fp/a5ae7740485ea6316f6467ed5a0e215d-cc_ft_1344.webp",
     two: "https://photos.zillowstatic.com/fp/72a4857d706a8838182cf09e393e7c97-cc_ft_768.webp",
@@ -147,6 +154,13 @@ const PROP_LIST = [
   },
   {
     id: 2,
+    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+    name: "Emily Harris",
+    email: "emily.harris@example.com",
+    phone: "+1 202-555-0172",
+    profileAddress: "456 Oak Avenue, Austin, TX",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/52151d82a92e61d87fd531f1e5c71c97-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/52151d82a92e61d87fd531f1e5c71c97-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/cbe17c8419f81debc75ba35cf84ab404-sc_1344_896.webp",
@@ -168,6 +182,13 @@ const PROP_LIST = [
   },
   {
     id: 3,
+    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+    name: "Michael Bennett",
+    email: "michael.bennett@example.com",
+    phone: "+1 202-555-0118",
+    profileAddress: "789 Maple Drive, Seattle, WA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/9644c46bee7ad8e58edbabd1957dbb60-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/9644c46bee7ad8e58edbabd1957dbb60-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/5a06e814a9646a593d022994ddddff40-sc_1344_896.webp",
@@ -189,6 +210,13 @@ const PROP_LIST = [
   },
   {
     id: 4,
+    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Sophia Turner",
+    email: "sophia.turner@example.com",
+    phone: "+1 202-555-0130",
+    profileAddress: "34 Pine Street, Miami, FL",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/23e25d05e180da7a0693cd2215053530-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/23e25d05e180da7a0693cd2215053530-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/ad572e51ab73bb827d3987256908d53b-sc_1344_896.webp",
@@ -210,6 +238,13 @@ const PROP_LIST = [
   },
   {
     id: 5,
+    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Liam Brooks",
+    email: "liam.brooks@example.com",
+    phone: "+1 202-555-0159",
+    profileAddress: "98 Willow Road, Denver, CO",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/b0443e39fb51b309d6f4c94f0f64fe68-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/b0443e39fb51b309d6f4c94f0f64fe68-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/5b628deaa33a0027ad452f490ad64b30-sc_1344_896.webp",
@@ -231,6 +266,13 @@ const PROP_LIST = [
   },
   {
     id: 6,
+    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Olivia Morgan",
+    email: "olivia.morgan@example.com",
+    phone: "+1 202-555-0107",
+    profileAddress: "65 Cedar Lane, Chicago, IL",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/539e26bb1a40bf1ba2a2707be554745c-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/539e26bb1a40bf1ba2a2707be554745c-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/83bb9c33571acea9467e8e715eb7db45-sc_1344_896.webp",
@@ -252,6 +294,13 @@ const PROP_LIST = [
   },
   {
     id: 7,
+    avatar: "https://randomuser.me/api/portraits/men/7.jpg",
+    name: "Noah Martinez",
+    email: "noah.martinez@example.com",
+    phone: "+1 202-555-0186",
+    profileAddress: "24 Birch Blvd, Phoenix, AZ",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/3cdafc4d83dad48e23ed9540133c276e-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/3cdafc4d83dad48e23ed9540133c276e-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/e9eb3da80c273d294f2ca835b10d6c0d-sc_1344_896.webp",
@@ -273,6 +322,13 @@ const PROP_LIST = [
   },
   {
     id: 8,
+    avatar: "https://randomuser.me/api/portraits/women/8.jpg",
+    name: "Isabella Rivera",
+    email: "isabella.rivera@example.com",
+    phone: "+1 202-555-0192",
+    profileAddress: "83 Cherry Court, Atlanta, GA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/91e48440adc4ec7e89ea5c94ed4bdc05-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/91e48440adc4ec7e89ea5c94ed4bdc05-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/1fe8d0cb095e55b4ae315df61fe12e8f-sc_1344_896.webp",
@@ -294,6 +350,13 @@ const PROP_LIST = [
   },
   {
     id: 9,
+    avatar: "https://randomuser.me/api/portraits/men/9.jpg",
+    name: "Ethan Reed",
+    email: "ethan.reed@example.com",
+    phone: "+1 202-555-0125",
+    profileAddress: "12 Redwood Street, San Diego, CA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/37eaf9926f59ead9adddec49a6dc8b52-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/37eaf9926f59ead9adddec49a6dc8b52-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/561ddd1692a28704da5271db1e888cb1-sc_1344_896.webp",
@@ -315,6 +378,13 @@ const PROP_LIST = [
   },
   {
     id: 10,
+    avatar: "https://randomuser.me/api/portraits/women/10.jpg",
+    name: "Mia Jenkins",
+    email: "mia.jenkins@example.com",
+    phone: "+1 202-555-0163",
+    profileAddress: "110 Spruce Circle, Dallas, TX",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/082110493ea75af8e01e6fe543854f3c-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/082110493ea75af8e01e6fe543854f3c-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/c66be83a0196994829e6db6a5011f7d7-sc_1344_896.webp",
@@ -336,6 +406,13 @@ const PROP_LIST = [
   },
   {
     id: 11,
+    avatar: "https://randomuser.me/api/portraits/men/11.jpg",
+    name: "James Foster",
+    email: "james.foster@example.com",
+    phone: "+1 202-555-0188",
+    profileAddress: "321 Aspen Lane, Portland, OR",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/ee235507f0aae66427d21747913918c8-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/ee235507f0aae66427d21747913918c8-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/c5c4d305dcc0338332a1ace89c1f9c32-sc_1344_896.webp",
@@ -357,6 +434,13 @@ const PROP_LIST = [
   },
   {
     id: 12,
+    avatar: "https://randomuser.me/api/portraits/women/12.jpg",
+    name: "Charlotte Perry",
+    email: "charlotte.perry@example.com",
+    phone: "+1 202-555-0176",
+    profileAddress: "56 Hemlock Drive, Nashville, TN",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/fe9628e8e41b9910fd5e802b9628b30d-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/fe9628e8e41b9910fd5e802b9628b30d-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/2b9040a55e7560f2ad4a55b285d50d57-sc_1344_896.webp",
@@ -378,6 +462,13 @@ const PROP_LIST = [
   },
   {
     id: 13,
+    avatar: "https://randomuser.me/api/portraits/men/13.jpg",
+    name: "Benjamin Powell",
+    email: "benjamin.powell@example.com",
+    phone: "+1 202-555-0102",
+    profileAddress: "145 Dogwood Street, Orlando, FL",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/6f059be37281b2474f8b6bc89d848404-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/6f059be37281b2474f8b6bc89d848404-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/dbdd2a885d1dee8acea5d336552a194c-sc_1344_896.webp",
@@ -399,6 +490,13 @@ const PROP_LIST = [
   },
   {
     id: 14,
+    avatar: "https://randomuser.me/api/portraits/women/14.jpg",
+    name: "Amelia Simmons",
+    email: "amelia.simmons@example.com",
+    phone: "+1 202-555-0197",
+    profileAddress: "78 Magnolia Way, Las Vegas, NV",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/548ed24b31b13273e53d3441a5244d9b-sc_1344_896.webp",
@@ -420,6 +518,13 @@ const PROP_LIST = [
   },
   {
     id: 15,
+    avatar: "https://randomuser.me/api/portraits/men/15.jpg",
+    name: "Lucas Howard",
+    email: "lucas.howard@example.com",
+    phone: "+1 202-555-0111",
+    profileAddress: "202 Poplar Court, Salt Lake City, UT",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/97bd35775ebc330550ddba347fafd69c-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/97bd35775ebc330550ddba347fafd69c-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/8204f611a1cc86c9c56df4304e0851b7-sc_1344_896.webp",
@@ -441,6 +546,13 @@ const PROP_LIST = [
   },
   {
     id: 16,
+    avatar: "https://randomuser.me/api/portraits/women/16.jpg",
+    name: "Evelyn Scott",
+    email: "evelyn.scott@example.com",
+    phone: "+1 202-555-0170",
+    profileAddress: "89 Redwood Blvd, Sacramento, CA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/6f1f89ff1b604cc3da338d0c2d62db2c-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/6f1f89ff1b604cc3da338d0c2d62db2c-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/192221f4b99edb17b07e085093d37c0a-sc_1344_896.webp",
@@ -462,6 +574,13 @@ const PROP_LIST = [
   },
   {
     id: 17,
+    avatar: "https://randomuser.me/api/portraits/men/17.jpg",
+    name: "Henry Green",
+    email: "henry.green@example.com",
+    phone: "+1 202-555-0133",
+    profileAddress: "130 Laurel Street, San Antonio, TX",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/b2d82fc9a1c3f90723f0bf3fe49933bb-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/b2d82fc9a1c3f90723f0bf3fe49933bb-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/71cbbd9e3b5e455a6624b75905361baf-sc_1344_896.webp",
@@ -483,6 +602,13 @@ const PROP_LIST = [
   },
   {
     id: 18,
+    avatar: "https://randomuser.me/api/portraits/women/18.jpg",
+    name: "Grace Cooper",
+    email: "grace.cooper@example.com",
+    phone: "+1 202-555-0145",
+    profileAddress: "205 Fir Lane, Charlotte, NC",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/fe7a59bee35a984d55fbd00f0b9f0ead-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/fe7a59bee35a984d55fbd00f0b9f0ead-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/c14cdc710d3c3db1174cb209c7776536-sc_1344_896.webp",
@@ -504,6 +630,13 @@ const PROP_LIST = [
   },
   {
     id: 19,
+    avatar: "https://randomuser.me/api/portraits/men/19.jpg",
+    name: "Daniel Adams",
+    email: "daniel.adams@example.com",
+    phone: "+1 202-555-0154",
+    profileAddress: "48 Beechwood Ave, Columbus, OH",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/ccc553cff89e47d2dfb89acd680c37ba-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/ccc553cff89e47d2dfb89acd680c37ba-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/9fe5b100e18f8ece501fa13b4b320b58-sc_1344_896.webp",
@@ -525,6 +658,13 @@ const PROP_LIST = [
   },
   {
     id: 20,
+    avatar: "https://randomuser.me/api/portraits/women/20.jpg",
+    name: "Chloe Barnes",
+    email: "chloe.barnes@example.com",
+    phone: "+1 202-555-0169",
+    profileAddress: "77 Hickory Drive, Raleigh, NC",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/dec843dcac74cab873d87e0c1231f7b2-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/dec843dcac74cab873d87e0c1231f7b2-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/4fa765f46e7c680f19f9e30111102f8d-p_e.webp",
@@ -547,6 +687,13 @@ const PROP_LIST = [
 
   {
     id: 21,
+    avatar: "https://randomuser.me/api/portraits/women/20.jpg",
+    name: "Chloe Barnes",
+    email: "chloe.barnes@example.com",
+    phone: "+1 202-555-0169",
+    profileAddress: "77 Hickory Drive, Raleigh, NC",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/a20cf2ee5db59dd2d0ecf6e04532a01a-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/a20cf2ee5db59dd2d0ecf6e04532a01a-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/39226f54a527b88f7a7c50171b5857fa-p_e.webp",
@@ -568,6 +715,13 @@ const PROP_LIST = [
   },
   {
     id: 22,
+    avatar: "https://randomuser.me/api/portraits/men/21.jpg",
+    name: "Aaron Wallace",
+    email: "aaron.wallace@example.com",
+    phone: "+1 202-555-0123",
+    profileAddress: "102 Pine Hollow, Kansas City, MO",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/c32a5382acb652c3b61b63e12e3d813f-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/c32a5382acb652c3b61b63e12e3d813f-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/2b431d66f52a1e8fd2d4f8700b3a1289-p_e.webp",
@@ -589,6 +743,13 @@ const PROP_LIST = [
   },
   {
     id: 23,
+    avatar: "https://randomuser.me/api/portraits/men/23.jpg",
+    name: "Gabriel Hayes",
+    email: "gabriel.hayes@example.com",
+    phone: "+1 202-555-0144",
+    profileAddress: "67 Brookside Road, Des Moines, IA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/20aede162c4c2c209c5173a81f24093e-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/20aede162c4c2c209c5173a81f24093e-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/4898e036c0e64af25d97a1f540988465-p_e.webp",
@@ -610,6 +771,13 @@ const PROP_LIST = [
   },
   {
     id: 24,
+    avatar: "https://randomuser.me/api/portraits/women/24.jpg",
+    name: "Zoe Russell",
+    email: "zoe.russell@example.com",
+    phone: "+1 202-555-0139",
+    profileAddress: "155 Sunrise Lane, Lincoln, NE",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/900bb312f81ed1d458600dca8959b3db-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/900bb312f81ed1d458600dca8959b3db-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/6692816b4d3384108a8f9d7ca1d61a8b-p_e.webp",
@@ -631,6 +799,13 @@ const PROP_LIST = [
   },
   {
     id: 25,
+    avatar: "https://randomuser.me/api/portraits/men/25.jpg",
+    name: "Nathan Cook",
+    email: "nathan.cook@example.com",
+    phone: "+1 202-555-0175",
+    profileAddress: "420 Glenwood Ave, Tulsa, OK",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/865bf32bd80826bdb77e0507032a8c39-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/865bf32bd80826bdb77e0507032a8c39-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/75dfc7fb374a88dad1763cde9b21e9e0-p_e.webp",
@@ -652,6 +827,13 @@ const PROP_LIST = [
   },
   {
     id: 26,
+    avatar: "https://randomuser.me/api/portraits/women/26.jpg",
+    name: "Scarlett Foster",
+    email: "scarlett.foster@example.com",
+    phone: "+1 202-555-0198",
+    profileAddress: "35 Oakridge Drive, Madison, WI",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/79ff7723b5494ca9d78ffbc98aa7825c-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/79ff7723b5494ca9d78ffbc98aa7825c-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/d441b6319259af9c09217654f4758e0d-p_e.webp",
@@ -673,6 +855,13 @@ const PROP_LIST = [
   },
   {
     id: 27,
+    avatar: "https://randomuser.me/api/portraits/men/27.jpg",
+    name: "Aiden Myers",
+    email: "aiden.myers@example.com",
+    phone: "+1 202-555-0183",
+    profileAddress: "89 Fox Run, Baton Rouge, LA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/4200573e7f3a67ea5c10e5bb1c885a7b-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/4200573e7f3a67ea5c10e5bb1c885a7b-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/652f60992c367a7cd9a0aa6725ac6dda-p_e.webp",
@@ -694,6 +883,13 @@ const PROP_LIST = [
   },
   {
     id: 28,
+    avatar: "https://randomuser.me/api/portraits/women/28.jpg",
+    name: "Natalie Cooper",
+    email: "natalie.cooper@example.com",
+    phone: "+1 202-555-0151",
+    profileAddress: "200 Chestnut Drive, Boise, ID",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/4f33200f2f22e2ad0f8767df03cf5c7f-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/4f33200f2f22e2ad0f8767df03cf5c7f-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/b81620cedfea6b806472984a6fee8c5e-p_e.webp",
@@ -715,6 +911,13 @@ const PROP_LIST = [
   },
   {
     id: 29,
+    avatar: "https://randomuser.me/api/portraits/men/29.jpg",
+    name: "Dylan Price",
+    email: "dylan.price@example.com",
+    phone: "+1 202-555-0120",
+    profileAddress: "76 Oak Hill Rd, Spokane, WA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/617920b46489165685cdc75822a3e1b9-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/617920b46489165685cdc75822a3e1b9-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/0e920ba6270fa586dfe51fc670929351-p_e.webp",
@@ -736,6 +939,13 @@ const PROP_LIST = [
   },
   {
     id: 30,
+    avatar: "https://randomuser.me/api/portraits/women/30.jpg",
+    name: "Layla Jenkins",
+    email: "layla.jenkins@example.com",
+    phone: "+1 202-555-0148",
+    profileAddress: "48 Sunset Blvd, Little Rock, AR",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/20a88a33da1c8c1ed6c14604956377a0-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/20a88a33da1c8c1ed6c14604956377a0-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/a2743cd66d882cbbe81c45c5df65add0-p_e.webp",
@@ -757,6 +967,13 @@ const PROP_LIST = [
   },
   {
     id: 31,
+    avatar: "https://randomuser.me/api/portraits/men/31.jpg",
+    name: "Caleb Ross",
+    email: "caleb.ross@example.com",
+    phone: "+1 202-555-0165",
+    profileAddress: "92 Evergreen Way, Reno, NV",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/ecf3d810c68c58a2d7585e5d0eb846be-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/ecf3d810c68c58a2d7585e5d0eb846be-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/97f46d75efb954862cb655a3c6166dad-p_e.webp",
@@ -778,6 +995,13 @@ const PROP_LIST = [
   },
   {
     id: 32,
+    avatar: "https://randomuser.me/api/portraits/women/32.jpg",
+    name: "Hannah Bailey",
+    email: "hannah.bailey@example.com",
+    phone: "+1 202-555-0138",
+    profileAddress: "59 Ridgeview Lane, Grand Rapids, MI",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/4eec2409260866399f1df050f11e6478-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/4eec2409260866399f1df050f11e6478-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/6511b0d828e020ca05170347106b18f0-p_e.webp",
@@ -799,6 +1023,13 @@ const PROP_LIST = [
   },
   {
     id: 33,
+    avatar: "https://randomuser.me/api/portraits/men/33.jpg",
+    name: "Logan Peterson",
+    email: "logan.peterson@example.com",
+    phone: "+1 202-555-0180",
+    profileAddress: "125 Hilltop Court, Anchorage, AK",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/4ae485578107bc976453afa75656c5ae-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/4ae485578107bc976453afa75656c5ae-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/f93d84422287f064cbc7a8a4e8e675e6-p_e.webp",
@@ -820,6 +1051,13 @@ const PROP_LIST = [
   },
   {
     id: 34,
+    avatar: "https://randomuser.me/api/portraits/women/34.jpg",
+    name: "Ellie Barnes",
+    email: "ellie.barnes@example.com",
+    phone: "+1 202-555-0167",
+    profileAddress: "210 Willow Bend, Mobile, AL",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/e1ed823f8a9c2112264f9a1709e9e923-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/e1ed823f8a9c2112264f9a1709e9e923-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/06ad981381f0145bb196f0574b512522-p_e.webp",
@@ -841,6 +1079,13 @@ const PROP_LIST = [
   },
   {
     id: 35,
+    avatar: "https://randomuser.me/api/portraits/men/35.jpg",
+    name: "Samuel Simmons",
+    email: "samuel.simmons@example.com",
+    phone: "+1 202-555-0129",
+    profileAddress: "87 Riverwalk St, Wichita, KS",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/f7134738a8213f4c5da34a6ba131cfb9-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/f7134738a8213f4c5da34a6ba131cfb9-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/9aedeb9bc5d4098f59af34a25d439cf0-p_e.webp",
@@ -862,6 +1107,13 @@ const PROP_LIST = [
   },
   {
     id: 36,
+    avatar: "https://randomuser.me/api/portraits/women/36.jpg",
+    name: "Addison Morris",
+    email: "addison.morris@example.com",
+    phone: "+1 202-555-0174",
+    profileAddress: "64 Cypress Way, New Orleans, LA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/211b09142683a8600cc9f84bc01dd03d-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/211b09142683a8600cc9f84bc01dd03d-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/b0fb27ef51553d69e27be8a18424ae09-p_e.webp",
@@ -883,6 +1135,13 @@ const PROP_LIST = [
   },
   {
     id: 37,
+    avatar: "https://randomuser.me/api/portraits/men/37.jpg",
+    name: "Julian Mitchell",
+    email: "julian.mitchell@example.com",
+    phone: "+1 202-555-0135",
+    profileAddress: "137 Forest Lane, Charleston, SC",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/d13c44ae6fb0f18d1b9320d125af15cc-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/d13c44ae6fb0f18d1b9320d125af15cc-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/27030506bb8146da7418a65df2b13c86-p_e.webp",
@@ -904,6 +1163,13 @@ const PROP_LIST = [
   },
   {
     id: 38,
+    avatar: "https://randomuser.me/api/portraits/women/38.jpg",
+    name: "Aria Powell",
+    email: "aria.powell@example.com",
+    phone: "+1 202-555-0156",
+    profileAddress: "312 Sunrise Blvd, St. Louis, MO",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/c0becbdae2ecf5f5bf2371c0b38c9f91-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/c0becbdae2ecf5f5bf2371c0b38c9f91-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/a61d2780f272bd89326cb9323d9df5f6-p_e.webp",
@@ -925,6 +1191,13 @@ const PROP_LIST = [
   },
   {
     id: 39,
+    avatar: "https://randomuser.me/api/portraits/men/39.jpg",
+    name: "Owen Butler",
+    email: "owen.butler@example.com",
+    phone: "+1 202-555-0173",
+    profileAddress: "94 Cedar Grove, Albuquerque, NM",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/71eedbeeb7142f419504756ad0ce6c09-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/71eedbeeb7142f419504756ad0ce6c09-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/c7ae5206db3416f2975cda68030ca4eb-p_e.webp",
@@ -946,6 +1219,13 @@ const PROP_LIST = [
   },
   {
     id: 40,
+    avatar: "https://randomuser.me/api/portraits/women/40.jpg",
+    name: "Riley Bell",
+    email: "riley.bell@example.com",
+    phone: "+1 202-555-0114",
+    profileAddress: "20 Lakeview Ave, Honolulu, HI",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/180098c5af3cadc3ee60f334d8b7ead8-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/180098c5af3cadc3ee60f334d8b7ead8-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/0bbe28369651e5bdb20070ca927f8dee-p_e.webp",
@@ -967,6 +1247,13 @@ const PROP_LIST = [
   },
   {
     id: 41,
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    name: "Ethan Crawford",
+    email: "ethan.crawford@example.com",
+    phone: "+1 202-555-0191",
+    profileAddress: "45 Elm Street, Hartford, CT",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/cd537b1c1fa90dc2856eb0592c1465d5-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/cd537b1c1fa90dc2856eb0592c1465d5-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/1f9ceb87ec93ef8ef9edba971e7325cf-p_e.webp",
@@ -988,6 +1275,13 @@ const PROP_LIST = [
   },
   {
     id: 42,
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    name: "Ethan Crawford",
+    email: "ethan.crawford@example.com",
+    phone: "+1 202-555-0191",
+    profileAddress: "45 Elm Street, Hartford, CT",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/d80484a9aa329e91298d02186d839560-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/d80484a9aa329e91298d02186d839560-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/789ff1eda9674ecc93ff9ba5df53466c-p_e.webp",
@@ -1009,6 +1303,13 @@ const PROP_LIST = [
   },
   {
     id: 43,
+    avatar: "https://randomuser.me/api/portraits/men/43.jpg",
+    name: "Henry Lawson",
+    email: "henry.lawson@example.com",
+    phone: "+1 202-555-0146",
+    profileAddress: "142 Woodbridge Ln, Juneau, AK",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/9cac07fcbe8ee768a307fe286be7cdcc-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/9cac07fcbe8ee768a307fe286be7cdcc-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/faa42316be62182789f5b1b088a2ead4-p_e.webp",
@@ -1030,6 +1331,13 @@ const PROP_LIST = [
   },
   {
     id: 44,
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Samantha Holland",
+    email: "samantha.holland@example.com",
+    phone: "+1 202-555-0179",
+    profileAddress: "66 Magnolia Dr, Montgomery, AL",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/c51fa69545bd224adc55d5da14b2cb8d-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/c51fa69545bd224adc55d5da14b2cb8d-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/d12a586f44560df2803d2ae2e7e711d9-p_e.webp",
@@ -1051,6 +1359,13 @@ const PROP_LIST = [
   },
   {
     id: 45,
+    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+    name: "Wyatt Simmons",
+    email: "wyatt.simmons@example.com",
+    phone: "+1 202-555-0189",
+    profileAddress: "220 Autumn Court, Providence, RI",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/877e923f408e651869b722815b5132de-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/877e923f408e651869b722815b5132de-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/0a5f71898515716907f49091c17fca18-p_e.webp",
@@ -1072,6 +1387,13 @@ const PROP_LIST = [
   },
   {
     id: 46,
+    avatar: "https://randomuser.me/api/portraits/women/46.jpg",
+    name: "Aubrey Nichols",
+    email: "aubrey.nichols@example.com",
+    phone: "+1 202-555-0195",
+    profileAddress: "77 Clover Ridge, Cheyenne, WY",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/d51fdd7c4e3aeff3738b5d4450e28252-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/d51fdd7c4e3aeff3738b5d4450e28252-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/117b2fbddb0c28480a60dca6dfa03675-p_e.webp",
@@ -1093,6 +1415,13 @@ const PROP_LIST = [
   },
   {
     id: 47,
+    avatar: "https://randomuser.me/api/portraits/men/47.jpg",
+    name: "Liam Barrett",
+    email: "liam.barrett@example.com",
+    phone: "+1 202-555-0131",
+    profileAddress: "38 Pinefield Rd, Columbia, SC",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/3a46bf216ff32d88d41f5acd45066989-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/3a46bf216ff32d88d41f5acd45066989-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/47590ee619edb1f316f76a6885977baa-p_e.webp",
@@ -1114,6 +1443,13 @@ const PROP_LIST = [
   },
   {
     id: 48,
+    avatar: "https://randomuser.me/api/portraits/women/48.jpg",
+    name: "Maya Gibson",
+    email: "maya.gibson@example.com",
+    phone: "+1 202-555-0184",
+    profileAddress: "81 Sunrise Hill, Boise, ID",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/d68faab4d2c5fb6edd8293cb7ba12302-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/d68faab4d2c5fb6edd8293cb7ba12302-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/01bcdf146344392effbb8ea16d238c89-p_e.webp",
@@ -1135,6 +1471,13 @@ const PROP_LIST = [
   },
   {
     id: 49,
+    avatar: "https://randomuser.me/api/portraits/men/49.jpg",
+    name: "Lucas Jensen",
+    email: "lucas.jensen@example.com",
+    phone: "+1 202-555-0119",
+    profileAddress: "25 Kingswood Blvd, Bismarck, ND",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/7193b2c3c0573e7be343f08310002af7-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/7193b2c3c0573e7be343f08310002af7-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/26be325d0440e409b929e70331b76597-p_e.webp",
@@ -1156,6 +1499,13 @@ const PROP_LIST = [
   },
   {
     id: 50,
+    avatar: "https://randomuser.me/api/portraits/women/50.jpg",
+    name: "Grace Franklin",
+    email: "grace.franklin@example.com",
+    phone: "+1 202-555-0128",
+    profileAddress: "301 Willow Creek, Pierre, SD",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/d2690da4500e819fe3e5078afa4b7975-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/d2690da4500e819fe3e5078afa4b7975-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/88e315814299cee858dd4e286906a460-p_e.webp",
@@ -1177,6 +1527,13 @@ const PROP_LIST = [
   },
   {
     id: 51,
+    avatar: "https://randomuser.me/api/portraits/men/51.jpg",
+    name: "Elijah Sharp",
+    email: "elijah.sharp@example.com",
+    phone: "+1 202-555-0134",
+    profileAddress: "99 Silver Lake Rd, Salt Lake City, UT",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/cec02cd9f3f34b6cf4e4264d626ebe4a-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/cec02cd9f3f34b6cf4e4264d626ebe4a-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/d1109f7f1c76a3b17e639115ac97f8e4-p_e.webp",
@@ -1198,6 +1555,13 @@ const PROP_LIST = [
   },
   {
     id: 52,
+    avatar: "https://randomuser.me/api/portraits/women/52.jpg",
+    name: "Brooklyn Dean",
+    email: "brooklyn.dean@example.com",
+    phone: "+1 202-555-0142",
+    profileAddress: "60 Meadow View, Dover, DE",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/f08fc467de2fe70a1dd84f48b9933cee-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/f08fc467de2fe70a1dd84f48b9933cee-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/a1d304cd1451de4f3949f12633275a5c-p_e.webp",
@@ -1219,6 +1583,13 @@ const PROP_LIST = [
   },
   {
     id: 53,
+    avatar: "https://randomuser.me/api/portraits/men/53.jpg",
+    name: "Jackson Page",
+    email: "jackson.page@example.com",
+    phone: "+1 202-555-0126",
+    profileAddress: "123 Coral Springs, Carson City, NV",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/0598f183e7c61a2147ae6f57bd9126af-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/0598f183e7c61a2147ae6f57bd9126af-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/cd2a0383f780cdc1dc30e4dc6eecdd10-p_e.webp",
@@ -1240,6 +1611,13 @@ const PROP_LIST = [
   },
   {
     id: 54,
+    avatar: "https://randomuser.me/api/portraits/women/54.jpg",
+    name: "Avery Walters",
+    email: "avery.walters@example.com",
+    phone: "+1 202-555-0176",
+    profileAddress: "77 Ridgefield Dr, Frankfort, KY",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/08f641eb808aaaac13c50ba35a5a9c9f-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/08f641eb808aaaac13c50ba35a5a9c9f-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/d6a391a5a0b9dc1de03ebbc9237d6fc8-p_e.webp",
@@ -1261,6 +1639,13 @@ const PROP_LIST = [
   },
   {
     id: 55,
+    avatar: "https://randomuser.me/api/portraits/men/55.jpg",
+    name: "Isaac Marsh",
+    email: "isaac.marsh@example.com",
+    phone: "+1 202-555-0140",
+    profileAddress: "58 Birch Street, Trenton, NJ",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/0c0ce41713d34094889f6af4d7bb2816-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/0c0ce41713d34094889f6af4d7bb2816-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/4853a7a95588d5e2e97f7beeaa9cdeae-p_e.webp",
@@ -1282,6 +1667,13 @@ const PROP_LIST = [
   },
   {
     id: 56,
+    avatar: "https://randomuser.me/api/portraits/women/56.jpg",
+    name: "Savannah Cross",
+    email: "savannah.cross@example.com",
+    phone: "+1 202-555-0192",
+    profileAddress: "93 Clearview Dr, Raleigh, NC",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/ab9792d767ee6d6612e01da353ec049b-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/ab9792d767ee6d6612e01da353ec049b-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/d6ba1e4197894d5a6fb27562d1645415-p_e.webp",
@@ -1303,6 +1695,13 @@ const PROP_LIST = [
   },
   {
     id: 57,
+    avatar: "https://randomuser.me/api/portraits/men/57.jpg",
+    name: "Christian Park",
+    email: "christian.park@example.com",
+    phone: "+1 202-555-0118",
+    profileAddress: "88 Whispering Pines, Albany, NY",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/abcf870473365b8b44b9c9f8dee61d5a-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/abcf870473365b8b44b9c9f8dee61d5a-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/c509a198549ab7a4d05bed30939a004f-p_e.webp",
@@ -1325,6 +1724,13 @@ const PROP_LIST = [
   },
   {
     id: 58,
+    avatar: "https://randomuser.me/api/portraits/women/58.jpg",
+    name: "Hailey Monroe",
+    email: "hailey.monroe@example.com",
+    phone: "+1 202-555-0182",
+    profileAddress: "111 Rosewood Lane, Tallahassee, FL",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/357c06db0bdfd75324474e1a2bb1ed42-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/357c06db0bdfd75324474e1a2bb1ed42-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/cea2929faa1c42203f22519e6746cd2c-p_e.webp",
@@ -1346,6 +1752,13 @@ const PROP_LIST = [
   },
   {
     id: 59,
+    avatar: "https://randomuser.me/api/portraits/men/59.jpg",
+    name: "Jonathan Kim",
+    email: "jonathan.kim@example.com",
+    phone: "+1 202-555-0171",
+    profileAddress: "72 Oak Grove Rd, Phoenix, AZ",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/b7d60d42c081b8cf225a7077cb570505-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/b7d60d42c081b8cf225a7077cb570505-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/3ac59642a655b09fca895d7efe9e9bf7-p_e.webp",
@@ -1367,6 +1780,13 @@ const PROP_LIST = [
   },
   {
     id: 60,
+    avatar: "https://randomuser.me/api/portraits/women/60.jpg",
+    name: "Audrey Summers",
+    email: "audrey.summers@example.com",
+    phone: "+1 202-555-0136",
+    profileAddress: "456 Mountain View, Atlanta, GA",
+    description:
+      "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
     url: "https://photos.zillowstatic.com/fp/60f5403f21a12d0eb431cbc3046d92e6-p_e.webp",
     one: "https://photos.zillowstatic.com/fp/60f5403f21a12d0eb431cbc3046d92e6-p_e.webp",
     two: "https://photos.zillowstatic.com/fp/37915f774a4a46628afa96210f6b3b43-p_e.webp",
