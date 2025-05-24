@@ -22,7 +22,7 @@ const Footer = () => {
               vision and goals.
             </p>
             <a
-              className="bg-primary mx-auto mt-5 flex max-w-[130px] text-[12px] rounded-3xl px-4 py-2 gap-3 items-center text-secondary"
+              className="bg-primary mx-auto mt-5 flex max-w-[130px] text-[12px] rounded-3xl px-4 py-2 gap-3 items-center dark:bg-secondary dark:text-primary text-secondary"
               href="#"
             >
               Get Started{" "}
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-secondary max-w-[1100px] mx-auto mt-6 px-3">
+      <div className="text-secondary dark:text-primary max-w-[1100px] mx-auto mt-6 px-3">
         <div>
           <h2 className="text-[27px]">
             Discover Nature's Wonders with Expert Guidance
@@ -108,10 +108,10 @@ const Footer = () => {
         </div>
         <div className="w-full mt-5 mb-5 h-[0.6px] bg-secondary/10"></div>
         <div className="text-center flex flex-col">
-          <h3 className="text-[10px] text-secondary/40 mb-5">
+          <h3 className="text-[10px] dark:text-primary/40 text-secondary/40 mb-5">
             @2025 EverGreen All rights reserved.
           </h3>
-          <h3 className="text-[10px] text-secondary/40">
+          <h3 className="text-[10px] dark:text-primary/40 text-secondary/40">
             Terms & Conditions | Privacy Policy
           </h3>
         </div>

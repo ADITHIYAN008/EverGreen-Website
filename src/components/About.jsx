@@ -25,10 +25,10 @@ const About = () => {
   return (
     <div
       id="about"
-      className="text-secondary mt-10 max-w-[1100px] mx-auto md:mt-10 px-4 mb-12"
+      className="text-secondary dark:text-primary mt-10 max-w-[1100px] mx-auto md:mt-10 px-4 mb-12"
     >
       <div className="md:flex">
-        <h2 className="text-[32px] leading-12 font-medium tracking-tight sm:max-w-[500px] mb-5">
+        <h2 className="text-[32px] leading-12 font-medium tracking-tight dark:text-primary sm:max-w-[500px] mb-5">
           Your primary home might begin to feel left out.
         </h2>
         <div className="flex gap-3 md:gap-0 items-center cursor-pointer">
@@ -38,7 +38,7 @@ const About = () => {
               <img className="p-2" src={PlayIcon} alt="play-icon" />
             </div>
           </div>
-          <p className="text-[10px] text-secondary/60">
+          <p className="text-[10px] dark:text-primary text-secondary/60">
             Each listing offers unique features. exceptional quality, and prime
             locations
           </p>
@@ -59,12 +59,14 @@ const About = () => {
             src={images[currentIndex]}
             alt="Main"
           />
-          <div className="absolute bottom-5 xl:bottom-17 md:bottom-8 md:right-5 right-2 flex gap-2 bg-primary px-2 py-[5px] rounded-3xl">
+          <div className="absolute bottom-5 xl:bottom-17 md:bottom-8 md:right-5 right-2 dark:bg-secondary flex gap-2 bg-primary px-2 py-[5px] rounded-3xl">
             {images.map((img, index) => (
               <img
                 key={index}
-                className={` w-5 h-5 md:w-10  md:h-10 rounded-full transition-all duration-300 ${
-                  currentIndex === index ? "border-1 border-white" : "border"
+                className={` w-5 h-5 md:w-10 md:h-10 rounded-full transition-all duration-300 ${
+                  currentIndex === index
+                    ? "border-1 border-white"
+                    : "border dark:border-none"
                 }`}
                 src={img}
                 alt={`thumb-${index}`}
@@ -80,18 +82,18 @@ const About = () => {
               duration: 0.7,
               ease: "easeInOut",
             }}
-            className="w-1/2 text-center h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl"
+            className="w-1/2 text-center h-auto md:min-h-[230px] bg-secondary/5 px-3 dark:bg-primary lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl"
           >
-            <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center lg:mt-10">
+            <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center dark:text-secondary lg:mt-10">
               Big things can happen in small spaces.
             </h3>
-            <p className="text-[10px] text-center mt-2 mb-4 text-secondary/60">
+            <p className="text-[10px] text-center mt-2 mb-4 text-secondary/60 dark:text-secondary/30">
               With thoughtful design and smart organization, you can maximize
               every inch, making room for creativity
             </p>
             <Link
               to="/house"
-              className="text-[10px] w-full mx-auto  bg-primary px-10 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border hover:bg-secondary hover:text-primary hover:border-primary cursor-pointer transition-all duration-500 border-secondary/30"
+              className="text-[10px] w-full mx-auto  bg-primary px-10 py-2 sm:w-full sm:mx-auto mt-1 rounded-full border hover:bg-secondary dark:text-secondary hover:text-primary hover:border-primary cursor-pointer transition-all duration-500 border-secondary/30"
             >
               Details
             </Link>
@@ -103,10 +105,14 @@ const About = () => {
               duration: 0.7,
               ease: "easeInOut",
             }}
-            className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl"
+            className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] overflow-clip md:h-[350px] dark:bg-primary text-center lg:w-[400px] border border-secondary/30 rounded-2xl"
           >
-            <img className="rounded-xl" src={FourImg} alt="" />
-            <h2 className="mt-4 flex flex-col text-[14px] font-medium">
+            <img
+              className="rounded-tr-2xl rounded-tl-2xl w-full md:h-[13rem]"
+              src={FourImg}
+              alt=""
+            />
+            <h2 className="mt-4 flex flex-col text-[14px] font-medium dark:text-secondary">
               Pricing Start at <span>$256K</span>
             </h2>
             <Link

@@ -27,7 +27,7 @@ const Testimonials = () => {
 
   return (
     <div className="px-3 mb-15 max-w-[1100px] mx-auto">
-      <div className="text-secondary flex items-center mb-22 sm:justify-between sm:px-5 lg:px-20">
+      <div className="text-secondary dark:text-primary flex items-center mb-22 sm:justify-between sm:px-5 lg:px-20">
         <h2 className="text-[27px] md:w-[400px] md:text-4xl w-[300px] font-semibold">
           What our clients say about us
         </h2>
@@ -69,10 +69,10 @@ const Testimonials = () => {
             {CLIENTS.map((item, index) => (
               <CarouselItem key={index}>
                 <div className="p-1">
-                  <Card className="bg-gray-400/10 text-secondary border  border-secondary/20 h-[200px]">
+                  <Card className="bg-gray-400/10 dark:bg-primary text-secondary border  border-secondary/20 h-[200px]">
                     <CardContent className="flex justify-center px-6">
                       <div className="flex flex-col items-end ">
-                        <p className="text-[10px] min-h-[110px]">
+                        <p className="text-[10px] min-h-[110px] lg:text-[12px] lg:w-[80%] lg:mx-auto dark:text-secondary/60">
                           {item.review}
                         </p>
                         <div className="flex mt-3 gap-2">

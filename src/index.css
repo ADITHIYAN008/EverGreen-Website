@@ -14,7 +14,11 @@
   --font-four: "Bebas Neue", sans-serif;
   --color-primary: #ffffff;
   --color-secondary: #000000;
+
   /* ... */
+}
+.dark {
+  background-color: black;
 }
 
 html {

@@ -10,7 +10,7 @@ const Premium = () => {
   return (
     <div
       id="property"
-      className="text-secondary max-w-[1100px] mx-auto mb-12 px-3"
+      className="text-secondary dark:text-primary max-w-[1100px] mx-auto mb-12 px-3"
     >
       <div className="px-2 mb-8 md:flex md:justify-between items-center">
         <div>
@@ -18,7 +18,7 @@ const Premium = () => {
             Explore our premier houses
           </h2>
           <div className="flex">
-            <p className="text-[10px] w-[400px] text-secondary/70 mt-3">
+            <p className="text-[10px] w-[400px] dark:text-primary/40 text-secondary/70 mt-3">
               Each listing offers unique features, exceptional quality, and
               prime locations, ensuring an exclusive living experience."
             </p>
@@ -27,7 +27,7 @@ const Premium = () => {
         <div className="hidden md:block">
           <Link
             to="/AllList"
-            className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer"
+            className="flex bg-secondary dark:bg-primary dark:text-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl mt-2 mx-auto gap-2 cursor-pointer"
           >
             See All Properties
             <motion.div
@@ -90,7 +90,7 @@ const Premium = () => {
                 src={item.url}
                 alt={item.title}
               />
-              <div className="bg-primary absolute top-3 left-3 px-3 py-1 rounded-3xl font-medium text-[10px]">
+              <div className="bg-primary dark:bg-secondary absolute top-3 left-3 px-3 py-1 rounded-3xl font-medium text-[10px]">
                 For Sale
               </div>
             </Link>
@@ -116,7 +116,7 @@ const Premium = () => {
       </ul>
       <Link
         to="/AllList"
-        className="flex bg-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl w-[12rem] mt-2 mx-auto gap-2 cursor-pointer md:hidden"
+        className="flex bg-secondary dark:bg-primary dark:text-secondary text-primary items-center text-[12px] px-8 py-3 rounded-3xl w-[12rem] mt-2 mx-auto gap-2 cursor-pointer md:hidden"
       >
         See All Properties
         <motion.div

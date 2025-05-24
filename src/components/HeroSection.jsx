@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import HeroImg from "../assets/two.jpg";
 import { Link } from "react-router-dom";
+import useDarkMode from "@/constant/useDarkMode";
 
 const HeroSection = () => {
   const textButton = ["House", "Appartment", "Residential"];
