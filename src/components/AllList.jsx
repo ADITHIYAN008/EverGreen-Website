@@ -1,12 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Properties from "./Properties";
 import { Box, MenuItem, TextField } from "@mui/material";
+import Lenis from "lenis";
 
 const AllList = () => {
   const [looking, setLooking] = useState("");
   const [price, setPrice] = useState("");
   const [location, setLocation] = useState("");
   const [room, setRooms] = useState("");
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const handleReset = () => {
     setLooking("");

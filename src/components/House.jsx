@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 import { FaBath, FaBed } from "react-icons/fa6";
 import { Link, Navigate, useLocation, useParams } from "react-router-dom";
@@ -14,11 +14,34 @@ import {
   DrawerTrigger,
 } from "./ui/drawer";
 import { Button } from "./ui/button";
+import Lenis from "lenis";
 
 const House = () => {
   const { state } = useLocation();
   const { imgData, relImg } = state;
   const { id } = useParams();
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const [imgUrl, setImgUrl] = useState(relImg.ImgOne);
   const [activeImg, setActiveTab] = useState(relImg.ImgOne);

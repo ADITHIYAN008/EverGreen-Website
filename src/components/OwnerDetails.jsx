@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { FaAddressCard, FaUser } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
@@ -16,9 +16,32 @@ import {
   AlertDialogTrigger,
 } from "./ui/alert-dialog";
 import { PROP_LIST } from "@/constant/data";
+import Lenis from "lenis";
 
 const OwnerDetails = () => {
   const location = useLocation();
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const { id } = useParams();
 
@@ -136,48 +159,50 @@ const OwnerDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 grid-rows-3 w-full gap-3 ">
-                <div className="bg-black rounded-2xl row-span-2 h-full border">
-                  <img
-                    className="h-full w-full object-cover rounded-2xl"
-                    src={item.one}
-                    alt={item.title}
-                  />
-                </div>
-                <div className="bg-black rounded-2xl col-span-2 border h-[17rem]">
-                  <img
-                    className="h-full w-full object-cover rounded-2xl"
-                    src={item.two}
-                    alt={item.title}
-                  />
-                </div>
-                <div className="bg-black rounded-2xl h-[17rem] border">
-                  <img
-                    className="h-full w-full object-cover rounded-2xl"
-                    src={item.three}
-                    alt={item.title}
-                  />
-                </div>
-                <div className="bg-black rounded-2xl h-[17rem] border">
-                  <img
-                    className="h-full w-full object-cover rounded-2xl"
-                    src={item.four}
-                    alt={item.title}
-                  />
-                </div>
-                <div className="bg-black  rounded-2xl col-span-2 h-[17rem] border">
-                  <img
-                    className="h-full w-full object-cover rounded-2xl"
-                    src={item.five}
-                    alt={item.title}
-                  />
-                </div>
-                <div className="bg-black rounded-2xl h-[17rem] border">
-                  <img
-                    className="h-full w-full object-cover rounded-2xl"
-                    src={item.six}
-                    alt={item.title}
-                  />
+              <div className="hidden lg:block">
+                <div className="grid grid-cols-3 grid-rows-3 w-full gap-3 ">
+                  <div className="bg-black rounded-2xl row-span-2 h-full border">
+                    <img
+                      className="h-full w-full object-cover rounded-2xl"
+                      src={item.one}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className="bg-black rounded-2xl col-span-2 border h-[17rem]">
+                    <img
+                      className="h-full w-full object-cover rounded-2xl"
+                      src={item.two}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className="bg-black rounded-2xl h-[17rem] border">
+                    <img
+                      className="h-full w-full object-cover rounded-2xl"
+                      src={item.three}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className="bg-black rounded-2xl h-[17rem] border">
+                    <img
+                      className="h-full w-full object-cover rounded-2xl"
+                      src={item.four}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className="bg-black  rounded-2xl col-span-2 h-[17rem] border">
+                    <img
+                      className="h-full w-full object-cover rounded-2xl"
+                      src={item.five}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className="bg-black rounded-2xl h-[17rem] border">
+                    <img
+                      className="h-full w-full object-cover rounded-2xl"
+                      src={item.six}
+                      alt={item.title}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
