@@ -46,17 +46,11 @@ const About = () => {
       </div>
       <div className="flex items-end flex-col xl:flex-row gap-2">
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 0.5,
-            delay: 0.5,
+            duration: 0.7,
+            ease: "easeInOut",
           }}
           className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative border border-secondary/30 rounded-2xl"
         >
@@ -80,17 +74,11 @@ const About = () => {
         </motion.div>
         <div className="flex md:flex-row lg:flex-col gap-2">
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 50,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
+            initial={{ y: 80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 0.5,
-              delay: 0.5,
+              duration: 0.7,
+              ease: "easeInOut",
             }}
             className="w-1/2 text-center h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl"
           >
@@ -109,17 +97,11 @@ const About = () => {
             </Link>
           </motion.div>
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 50,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
+            initial={{ y: 80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 0.5,
-              delay: 0.5,
+              duration: 0.7,
+              ease: "easeInOut",
             }}
             className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl"
           >

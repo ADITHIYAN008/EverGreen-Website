@@ -31,15 +31,11 @@ const Premium = () => {
           >
             See All Properties
             <motion.div
-              initial={{
-                x: 0,
-              }}
-              animate={{
-                x: [0, 12, 0],
-              }}
+              initial={{ y: 80, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 3,
-                repeat: Infinity,
+                duration: 0.7,
+                ease: "easeInOut",
               }}
             >
               <FaArrowRightLong />
@@ -50,17 +46,11 @@ const Premium = () => {
       <ul className="md:grid grid-cols-2 xl:grid-cols-3">
         {PROP_LIST.filter((item) => item.premium).map((item, index) => (
           <motion.li
-            initial={{
-              opacity: 0,
-              y: 50,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
+            initial={{ y: 80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 0.5,
-              delay: 0.5,
+              duration: 0.7,
+              ease: "easeInOut",
             }}
             className="mb-12"
             key={index}
@@ -90,15 +80,11 @@ const Premium = () => {
               className="relative"
             >
               <motion.img
-                initial={{
-                  scale: 1,
-                }}
-                whileHover={{
-                  scale: 1.02,
-                }}
+                initial={{ y: 80, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
                 transition={{
-                  duration: 0.3,
-                  ease: easeIn,
+                  duration: 0.7,
+                  ease: "easeInOut",
                 }}
                 className="rounded-3xl w-full max-h-[240px] cursor-pointer md:max-w-[350px] md:min-h-[300px] lg:h-[400px] lg:max-w-[450px] md:object-cover xl:max-w-[320px] xl:max-h-[200px]"
                 src={item.url}
