@@ -444,7 +444,7 @@ const PROP_LIST = [
     profileAddress: "78 Magnolia Way, Las Vegas, NV",
     description:
       "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
-    url: "https://photos.zillowstatic.com/fp2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
+    url: "https://photos.zillowstatic.com/fp/2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/548ed24b31b13273e53d3441a5244d9b-sc_1344_896.webp",
     three:

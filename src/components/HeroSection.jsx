@@ -16,7 +16,7 @@ const HeroSection = () => {
   });
   return (
     <>
-      <div id="home" className="relative w-screen pb-1">
+      <div id="home" className="relative w-screen ">
         <img
           className="min-w-screen md:max-h-screen md:object-cover md:min-h-[53rem] min-h-[40rem] object-cover"
           src={HeroImg}
@@ -43,10 +43,10 @@ const HeroSection = () => {
                 duration: 1,
                 delay: 0.2,
               }}
-              className="text-[2.7rem] leading-12 font-medium flex sm:text-[3rem] flex-col md:text-[4rem] md:mt-10 md:leading-16  lg:text-[5rem] xl:mb-10"
+              className="text-[2.7rem] leading-12 font-four font-medium flex sm:text-[3rem] flex-col md:text-[4rem] md:mt-10 md:leading-21 md:font-bold tracking-wide  lg:text-[5rem] xl:mb-10"
             >
               <div>
-                Build Your<span className="text-[#27A830]">Future,</span>
+                Build Your<span className="text-[#27A830] ml-2">Future,</span>
               </div>
 
               <span>One Property at a Time.</span>
@@ -72,7 +72,7 @@ const HeroSection = () => {
               a time. Discover spaces that match your lifestyle, goals, and
               dreams.
             </motion.p>
-            <motion.div
+            {/* <motion.div
               initial={{
                 opacity: 0,
                 y: 100,
@@ -154,10 +154,10 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
-        <div className="flex md:hidden justify-center mb-12">
+        {/* <div className="flex md:hidden justify-center mb-12">
           <motion.div
             initial={{
               opacity: 0,
@@ -207,23 +207,7 @@ const HeroSection = () => {
                   placeholder="Eg.2 Bed rooms"
                 />
               </div>
-              <div className="mb-8 mt-5">
-                <h3 className="text-sm mb-3">Filter:</h3>
-                <div className="flex gap-1">
-                  <button className="text-[12px] border border-gray-300 focus-within:bg-gray-300/60  px-3 py-1 rounded-full">
-                    City
-                  </button>
-                  <button className="text-[12px] border border-gray-300 focus-within:bg-gray-300/60 px-3 py-1 rounded-full">
-                    House
-                  </button>
-                  <button className="text-[12px] border border-gray-300 focus-within:bg-gray-300/60 px-3 py-1 rounded-full">
-                    Residential
-                  </button>
-                  <button className="text-[12px] border border-gray-300 focus-within:bg-gray-300/60 px-3 py-1 rounded-full">
-                    Apartment
-                  </button>
-                </div>
-              </div>
+              <div className="mb-8 mt-5"></div>
               <Link
                 to="/AllList"
                 className="bg-secondary text-primary px-5 py-3 rounded-3xl text-[13px] cursor-pointer ml-18 w-full"
@@ -232,7 +216,7 @@ const HeroSection = () => {
               </Link>
             </div>
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </>
   );
