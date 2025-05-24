@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
-import IP6 from "../assets/IP6.png";
 import { FaAddressCard, FaUser } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
@@ -20,16 +19,16 @@ import { PROP_LIST } from "@/constant/data";
 
 const OwnerDetails = () => {
   const location = useLocation();
-  const { ImgId } = location.state || {};
+  const imgId = location.state?.ImgId;
 
   return (
     <div className="text-secondary px-5 pt-5">
       <h1 className="text-3xl font-secondary underline text-center mb-5">
-        Profile
+        Profile {imgId}
       </h1>
-      {PROP_LIST.filter((item) => item.id === ImgId).map((item, index) => (
+      {PROP_LIST.filter((item) => item.id === imgId).map((item) => (
         <>
-          <div className="flex gap-6 text-secondary rounded-2xl">
+          <div key={item.id} className="flex gap-6 text-secondary rounded-2xl">
             <div className="w-30 h-35 bg-secondary overflow-clip rounded-2xl">
               <img
                 className="object-cover w-full h-full object-center"

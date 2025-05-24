@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import { FaBath, FaBed } from "react-icons/fa6";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { PROP_LIST } from "@/constant/data";
 import {
   Drawer,
@@ -18,9 +18,11 @@ import { Button } from "./ui/button";
 const House = () => {
   const { state } = useLocation();
   const { imgData, relImg } = state;
+  const { id } = useParams();
 
   const [imgUrl, setImgUrl] = useState(relImg.ImgOne);
   const [activeImg, setActiveTab] = useState(relImg.ImgOne);
+  const [imgId, setImgId] = useState(imgData.Id || id);
 
   return (
     <div className="text-secondary max-w-[1100px] mx-auto">
@@ -185,9 +187,9 @@ const House = () => {
           </Drawer>
 
           <Link
-            to={`/owner/${imgData.Id}`}
+            to={`/owner/${imgId}`}
             state={{
-              ImgId: imgData.Id,
+              ImgId: imgId,
             }}
             className="bg-secondary text-primary px-3 py-2 rounded-2xl border text-[11px] lg:text-[16px] lg:px-5 hover:bg-transparent hover:text-secondary hover:border transition-all duration-300 ease-in"
           >
@@ -228,9 +230,8 @@ const House = () => {
                       },
                     }}
                     onClick={() => {
-                      setTimeout(() => {
-                        window.location.reload();
-                      }, 100);
+                      setImgId(item.id);
+                      setImgUrl(item.url);
                     }}
                     className="w-[9rem] h-[8rem] rounded-2xl bg-secondary"
                   >
