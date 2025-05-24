@@ -50,7 +50,7 @@ const Footer = () => {
             Discover Nature's Wonders with Expert Guidance
           </h2>
           <div className="mt-2">
-            <h4 className="text-[10px]">12345, Gazipur, Dhaka, Road, India</h4>
+            <h4 className="text-[10px]">12345, Gazipur, Dhaka, Road, USA</h4>
             <h4 className="text-[10px]">{"(+1)8139-849-8483"}</h4>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="cursor-pointer hover:underline" href="#">
+              <a className="cursor-pointer hover:underline" href="#contact">
                 Contact
               </a>
             </li>

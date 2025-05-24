@@ -8,7 +8,19 @@ const Discover = () => {
   return (
     <div className="text-secondary lg:justify-between lg:px-15 px-3 py-5 md:flex md:gap-3 bg-secondary/5">
       <div className="flex justify-between w-full max-w-[1100px] mx-auto flex-col md:flex-row md:gap-10 xl:flex lg:flex-row">
-        <img
+        <motion.img
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+          }}
           className="rounded-2xl md:w-[300px] shadow-xl border border-secondary/40"
           src={MapImg}
           alt=""

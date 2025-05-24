@@ -1,4 +1,4 @@
-import { PREMIUM_HOUSES } from "@/constant/data";
+import { PROP_LIST } from "@/constant/data";
 import React from "react";
 import { FaArrowRightLong, FaBath, FaBed } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
@@ -48,9 +48,47 @@ const Premium = () => {
         </div>
       </div>
       <ul className="md:grid grid-cols-2 xl:grid-cols-3">
-        {PREMIUM_HOUSES.map((item, index) => (
-          <li className="mb-12" key={index}>
-            <div className="relative">
+        {PROP_LIST.filter((item) => item.premium).map((item, index) => (
+          <motion.li
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.5,
+            }}
+            className="mb-12"
+            key={index}
+          >
+            <Link
+              to={`/house/${item.id}`}
+              state={{
+                relImg: {
+                  ImgOne: item.one,
+                  ImgTwo: item.two,
+                  ImgThree: item.three,
+                  ImgFour: item.four,
+                  ImgFive: item.five,
+                  ImgSix: item.six,
+                },
+                imgData: {
+                  Id: item.id,
+                  Url: item.url,
+                  Title: item.title,
+                  Type: item.type,
+                  beds: item.bed,
+                  bathroom: item.bathrooms,
+                  price: item.price,
+                  address: item.address,
+                },
+              }}
+              className="relative"
+            >
               <motion.img
                 initial={{
                   scale: 1,
@@ -62,20 +100,20 @@ const Premium = () => {
                   duration: 0.3,
                   ease: easeIn,
                 }}
-                className="rounded-3xl cursor-pointer md:max-w-[350px] md:min-h-[300px] lg:h-[400px] lg:max-w-[450px] md:object-cover xl:max-w-[320px] xl:max-h-[200px]"
+                className="rounded-3xl w-full max-h-[240px] cursor-pointer md:max-w-[350px] md:min-h-[300px] lg:h-[400px] lg:max-w-[450px] md:object-cover xl:max-w-[320px] xl:max-h-[200px]"
                 src={item.url}
                 alt={item.title}
               />
               <div className="bg-primary absolute top-3 left-3 px-3 py-1 rounded-3xl font-medium text-[10px]">
                 For Sale
               </div>
-            </div>
+            </Link>
             <div className="flex text-[15px] gap-5 ml-2 mt-4">
               <h2 className="flex gap-2 items-center">
                 <FaBed /> <span className="text-[12px]">{item.beds}</span>
               </h2>
               <h2 className="flex gap-2 items-center">
-                <FaBed /> <span className="text-[12px]">{item.bathroom}</span>
+                <FaBed /> <span className="text-[12px]">{item.bathrooms}</span>
               </h2>
             </div>
             <h2 className="ml-1 mt-2 text-xl cursor-pointer font-medium">
@@ -83,11 +121,11 @@ const Premium = () => {
             </h2>
             <div className="ml-2 mt-2">
               <h3 className="flex items-center gap-2 text-[12px]">
-                {item.amount} <GoDotFill className="size-2 text-secondary/50" />{" "}
+                {item.price} <GoDotFill className="size-2 text-secondary/50" />{" "}
                 {item.address}
               </h3>
             </div>
-          </li>
+          </motion.li>
         ))}
       </ul>
       <Link

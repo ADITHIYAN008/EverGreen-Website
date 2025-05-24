@@ -1,63 +1,7 @@
-import { Content } from "@radix-ui/react-accordion";
-import OneImg from "../assets/one.jpg";
-import TwoImg from "../assets/two.jpg";
-import ThreeImg from "../assets/three.jpg";
-import FourImg from "../assets/four.jpg";
 import Profile1 from "../assets/profile1.jpg";
 import Profile2 from "../assets/profile2.jpg";
 import Profile3 from "../assets/profile3.avif";
 import Profile4 from "../assets/profile4.avif";
-
-const PREMIUM_HOUSES = [
-  {
-    url: OneImg,
-    beds: "5 Bedrooms",
-    bathroom: "2 Bathroom",
-    title: "The Pinnacle at Highland Park",
-    amount: "$3,56798.00",
-    address: "123 Maple Street, New York",
-  },
-  {
-    url: TwoImg,
-    beds: "5 Bedrooms",
-    bathroom: "2 Bathroom",
-    title: "The Pinnacle at Highland Park",
-    amount: "$2,56798.00",
-    address: "123 Maple Street, New York",
-  },
-  {
-    url: ThreeImg,
-    beds: "5 Bedrooms",
-    bathroom: "2 Bathroom",
-    title: "The Pinnacle at Highland Park",
-    amount: "$4,56798.00",
-    address: "123 Maple Street, New York",
-  },
-  {
-    url: FourImg,
-    beds: "5 Bedrooms",
-    bathroom: "2 Bathroom",
-    title: "The Pinnacle at Highland Park",
-    amount: "$5,56798.00",
-    address: "123 Maple Street, New York",
-  },
-  {
-    url: OneImg,
-    beds: "5 Bedrooms",
-    bathroom: "2 Bathroom",
-    title: "The Pinnacle at Highland Park",
-    amount: "$2,56798.00",
-    address: "123 Maple Street, New York",
-  },
-  {
-    url: TwoImg,
-    beds: "5 Bedrooms",
-    bathroom: "2 Bathroom",
-    title: "The Pinnacle at Highland Park",
-    amount: "$3,56798.00",
-    address: "123 Maple Street, New York",
-  },
-];
 
 const FAQ_LIST = [
   {
@@ -95,37 +39,37 @@ const FAQ_LIST = [
 const CLIENTS = [
   {
     avatar: Profile1,
-    name: "Sajibur Rahman",
-    role: "UI/UX Designer",
+    name: "Johnson",
+    role: "Graphic Designer",
     review:
-      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them! Their creativity and constant communication made the entire experience stress-free and enjoyable.",
   },
   {
     avatar: Profile2,
-    name: "Sajibur Rahman",
-    role: "UI/UX Designer",
+    name: "Michael Thompson",
+    role: "Software Engineer",
     review:
-      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+      "The service we received was outstanding. The team went above and beyond to meet our needs and delivered on every promise. I highly recommend them! They were always one step ahead and guided us with professionalism and clarity throughout the journey.",
   },
   {
     avatar: Profile3,
-    name: "Sajibur Rahman",
-    role: "UI/UX Designer",
+    name: "Jessica Lee",
+    role: "Digital Marketing Manager",
     review:
-      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+      "Absolutely thrilled with the results. The team demonstrated deep market knowledge and provided excellent guidance. Their expertise was invaluable. We felt supported at every turn, and their insights made all the difference in finding the right fit.",
   },
   {
     avatar: Profile4,
-    name: "Sajibur Rahman",
-    role: "UI/UX Designer",
+    name: "David Martinez",
+    role: "Business Analyst",
     review:
-      "Working with this team was a pleasure. They understood our vision and helped us find property that exceeded our expectations. We couldn't have done it without them!",
+      "This team is simply the best. From day one, they treated us like family and were committed to finding the perfect place. Their friendly approach and professionalism are unmatched. They truly exceeded all expectations and made the process smooth and easy.",
   },
 ];
 
 const PROP_LIST = [
   {
-    id: 1,
+    id: "1",
     avatar: "https://randomuser.me/api/portraits/men/1.jpg",
     name: "John Carter",
     email: "john.carter@example.com",
@@ -153,7 +97,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 2,
+    id: "2",
     avatar: "https://randomuser.me/api/portraits/women/2.jpg",
     name: "Emily Harris",
     email: "emily.harris@example.com",
@@ -181,7 +125,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 3,
+    id: "3",
     avatar: "https://randomuser.me/api/portraits/men/3.jpg",
     name: "Michael Bennett",
     email: "michael.bennett@example.com",
@@ -209,7 +153,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 4,
+    id: "4",
     avatar: "https://randomuser.me/api/portraits/women/4.jpg",
     name: "Sophia Turner",
     email: "sophia.turner@example.com",
@@ -237,7 +181,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 5,
+    id: "5",
     avatar: "https://randomuser.me/api/portraits/men/5.jpg",
     name: "Liam Brooks",
     email: "liam.brooks@example.com",
@@ -265,7 +209,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 6,
+    id: "6",
     avatar: "https://randomuser.me/api/portraits/women/6.jpg",
     name: "Olivia Morgan",
     email: "olivia.morgan@example.com",
@@ -293,7 +237,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 7,
+    id: "7",
     avatar: "https://randomuser.me/api/portraits/men/7.jpg",
     name: "Noah Martinez",
     email: "noah.martinez@example.com",
@@ -321,7 +265,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 8,
+    id: "8",
     avatar: "https://randomuser.me/api/portraits/women/8.jpg",
     name: "Isabella Rivera",
     email: "isabella.rivera@example.com",
@@ -347,9 +291,10 @@ const PROP_LIST = [
     address: "1600 Main Street, San Francisco",
     city: "sanfrancisco",
     newArrival: false,
+    premium: true,
   },
   {
-    id: 9,
+    id: "9",
     avatar: "https://randomuser.me/api/portraits/men/9.jpg",
     name: "Ethan Reed",
     email: "ethan.reed@example.com",
@@ -377,7 +322,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 10,
+    id: "10",
     avatar: "https://randomuser.me/api/portraits/women/10.jpg",
     name: "Mia Jenkins",
     email: "mia.jenkins@example.com",
@@ -403,9 +348,10 @@ const PROP_LIST = [
     address: "84 Shoreline Blvd, Austin",
     city: "austin",
     newArrival: false,
+    premium: true,
   },
   {
-    id: 11,
+    id: "11",
     avatar: "https://randomuser.me/api/portraits/men/11.jpg",
     name: "James Foster",
     email: "james.foster@example.com",
@@ -433,7 +379,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 12,
+    id: "12",
     avatar: "https://randomuser.me/api/portraits/women/12.jpg",
     name: "Charlotte Perry",
     email: "charlotte.perry@example.com",
@@ -461,7 +407,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 13,
+    id: "13",
     avatar: "https://randomuser.me/api/portraits/men/13.jpg",
     name: "Benjamin Powell",
     email: "benjamin.powell@example.com",
@@ -487,9 +433,10 @@ const PROP_LIST = [
     address: "2022 Central Park South, New York",
     city: "newyork",
     newArrival: false,
+    premium: true,
   },
   {
-    id: 14,
+    id: "14",
     avatar: "https://randomuser.me/api/portraits/women/14.jpg",
     name: "Amelia Simmons",
     email: "amelia.simmons@example.com",
@@ -497,7 +444,7 @@ const PROP_LIST = [
     profileAddress: "78 Magnolia Way, Las Vegas, NV",
     description:
       "John is a responsible and friendly landlord who values long-term tenant relationships and smooth communication.",
-    url: "https://photos.zillowstatic.com/fp/2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
+    url: "https://photos.zillowstatic.com/fp2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
     one: "https://photos.zillowstatic.com/fp/2e4149972b59ce3525833bd90a1d735a-sc_1344_896.webp",
     two: "https://photos.zillowstatic.com/fp/548ed24b31b13273e53d3441a5244d9b-sc_1344_896.webp",
     three:
@@ -517,7 +464,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 15,
+    id: "15",
     avatar: "https://randomuser.me/api/portraits/men/15.jpg",
     name: "Lucas Howard",
     email: "lucas.howard@example.com",
@@ -545,7 +492,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 16,
+    id: "16",
     avatar: "https://randomuser.me/api/portraits/women/16.jpg",
     name: "Evelyn Scott",
     email: "evelyn.scott@example.com",
@@ -573,7 +520,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 17,
+    id: "17",
     avatar: "https://randomuser.me/api/portraits/men/17.jpg",
     name: "Henry Green",
     email: "henry.green@example.com",
@@ -601,7 +548,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 18,
+    id: "18",
     avatar: "https://randomuser.me/api/portraits/women/18.jpg",
     name: "Grace Cooper",
     email: "grace.cooper@example.com",
@@ -629,7 +576,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 19,
+    id: "19",
     avatar: "https://randomuser.me/api/portraits/men/19.jpg",
     name: "Daniel Adams",
     email: "daniel.adams@example.com",
@@ -655,9 +602,10 @@ const PROP_LIST = [
     address: "336 Willow Creek Lane, Austin",
     city: "austin",
     newArrival: false,
+    premium: true,
   },
   {
-    id: 20,
+    id: "20",
     avatar: "https://randomuser.me/api/portraits/women/20.jpg",
     name: "Chloe Barnes",
     email: "chloe.barnes@example.com",
@@ -686,7 +634,7 @@ const PROP_LIST = [
   },
 
   {
-    id: 21,
+    id: "21",
     avatar: "https://randomuser.me/api/portraits/women/20.jpg",
     name: "Chloe Barnes",
     email: "chloe.barnes@example.com",
@@ -714,7 +662,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 22,
+    id: "22",
     avatar: "https://randomuser.me/api/portraits/men/21.jpg",
     name: "Aaron Wallace",
     email: "aaron.wallace@example.com",
@@ -742,7 +690,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 23,
+    id: "23",
     avatar: "https://randomuser.me/api/portraits/men/23.jpg",
     name: "Gabriel Hayes",
     email: "gabriel.hayes@example.com",
@@ -770,7 +718,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 24,
+    id: "24",
     avatar: "https://randomuser.me/api/portraits/women/24.jpg",
     name: "Zoe Russell",
     email: "zoe.russell@example.com",
@@ -798,7 +746,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 25,
+    id: "25",
     avatar: "https://randomuser.me/api/portraits/men/25.jpg",
     name: "Nathan Cook",
     email: "nathan.cook@example.com",
@@ -826,7 +774,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 26,
+    id: "26",
     avatar: "https://randomuser.me/api/portraits/women/26.jpg",
     name: "Scarlett Foster",
     email: "scarlett.foster@example.com",
@@ -854,7 +802,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 27,
+    id: "27",
     avatar: "https://randomuser.me/api/portraits/men/27.jpg",
     name: "Aiden Myers",
     email: "aiden.myers@example.com",
@@ -882,7 +830,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 28,
+    id: "28",
     avatar: "https://randomuser.me/api/portraits/women/28.jpg",
     name: "Natalie Cooper",
     email: "natalie.cooper@example.com",
@@ -910,7 +858,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 29,
+    id: "29",
     avatar: "https://randomuser.me/api/portraits/men/29.jpg",
     name: "Dylan Price",
     email: "dylan.price@example.com",
@@ -938,7 +886,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 30,
+    id: "30",
     avatar: "https://randomuser.me/api/portraits/women/30.jpg",
     name: "Layla Jenkins",
     email: "layla.jenkins@example.com",
@@ -966,7 +914,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 31,
+    id: "31",
     avatar: "https://randomuser.me/api/portraits/men/31.jpg",
     name: "Caleb Ross",
     email: "caleb.ross@example.com",
@@ -994,7 +942,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 32,
+    id: "32",
     avatar: "https://randomuser.me/api/portraits/women/32.jpg",
     name: "Hannah Bailey",
     email: "hannah.bailey@example.com",
@@ -1022,7 +970,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 33,
+    id: "33",
     avatar: "https://randomuser.me/api/portraits/men/33.jpg",
     name: "Logan Peterson",
     email: "logan.peterson@example.com",
@@ -1050,7 +998,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 34,
+    id: "34",
     avatar: "https://randomuser.me/api/portraits/women/34.jpg",
     name: "Ellie Barnes",
     email: "ellie.barnes@example.com",
@@ -1076,9 +1024,10 @@ const PROP_LIST = [
     address: "19 Metro Plaza, New York",
     city: "newyork",
     newArrival: false,
+    premium: true,
   },
   {
-    id: 35,
+    id: "35",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg",
     name: "Samuel Simmons",
     email: "samuel.simmons@example.com",
@@ -1106,7 +1055,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 36,
+    id: "36",
     avatar: "https://randomuser.me/api/portraits/women/36.jpg",
     name: "Addison Morris",
     email: "addison.morris@example.com",
@@ -1134,7 +1083,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 37,
+    id: "37",
     avatar: "https://randomuser.me/api/portraits/men/37.jpg",
     name: "Julian Mitchell",
     email: "julian.mitchell@example.com",
@@ -1162,7 +1111,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 38,
+    id: "38",
     avatar: "https://randomuser.me/api/portraits/women/38.jpg",
     name: "Aria Powell",
     email: "aria.powell@example.com",
@@ -1190,7 +1139,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 39,
+    id: "39",
     avatar: "https://randomuser.me/api/portraits/men/39.jpg",
     name: "Owen Butler",
     email: "owen.butler@example.com",
@@ -1218,7 +1167,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 40,
+    id: "40",
     avatar: "https://randomuser.me/api/portraits/women/40.jpg",
     name: "Riley Bell",
     email: "riley.bell@example.com",
@@ -1246,7 +1195,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 41,
+    id: "41",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
     name: "Ethan Crawford",
     email: "ethan.crawford@example.com",
@@ -1272,9 +1221,10 @@ const PROP_LIST = [
     address: "400 Urban St, San Francisco",
     city: "sanfrancisco",
     newArrival: false,
+    premium: true,
   },
   {
-    id: 42,
+    id: "42",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
     name: "Ethan Crawford",
     email: "ethan.crawford@example.com",
@@ -1302,7 +1252,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 43,
+    id: "43",
     avatar: "https://randomuser.me/api/portraits/men/43.jpg",
     name: "Henry Lawson",
     email: "henry.lawson@example.com",
@@ -1330,7 +1280,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 44,
+    id: "44",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     name: "Samantha Holland",
     email: "samantha.holland@example.com",
@@ -1358,7 +1308,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 45,
+    id: "45",
     avatar: "https://randomuser.me/api/portraits/men/45.jpg",
     name: "Wyatt Simmons",
     email: "wyatt.simmons@example.com",
@@ -1386,7 +1336,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 46,
+    id: "46",
     avatar: "https://randomuser.me/api/portraits/women/46.jpg",
     name: "Aubrey Nichols",
     email: "aubrey.nichols@example.com",
@@ -1414,7 +1364,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 47,
+    id: "47",
     avatar: "https://randomuser.me/api/portraits/men/47.jpg",
     name: "Liam Barrett",
     email: "liam.barrett@example.com",
@@ -1442,7 +1392,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 48,
+    id: "48",
     avatar: "https://randomuser.me/api/portraits/women/48.jpg",
     name: "Maya Gibson",
     email: "maya.gibson@example.com",
@@ -1470,7 +1420,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 49,
+    id: "49",
     avatar: "https://randomuser.me/api/portraits/men/49.jpg",
     name: "Lucas Jensen",
     email: "lucas.jensen@example.com",
@@ -1498,7 +1448,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 50,
+    id: "50",
     avatar: "https://randomuser.me/api/portraits/women/50.jpg",
     name: "Grace Franklin",
     email: "grace.franklin@example.com",
@@ -1526,7 +1476,7 @@ const PROP_LIST = [
     newArrival: true,
   },
   {
-    id: 51,
+    id: "51",
     avatar: "https://randomuser.me/api/portraits/men/51.jpg",
     name: "Elijah Sharp",
     email: "elijah.sharp@example.com",
@@ -1554,7 +1504,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 52,
+    id: "52",
     avatar: "https://randomuser.me/api/portraits/women/52.jpg",
     name: "Brooklyn Dean",
     email: "brooklyn.dean@example.com",
@@ -1582,7 +1532,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 53,
+    id: "53",
     avatar: "https://randomuser.me/api/portraits/men/53.jpg",
     name: "Jackson Page",
     email: "jackson.page@example.com",
@@ -1610,7 +1560,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 54,
+    id: "54",
     avatar: "https://randomuser.me/api/portraits/women/54.jpg",
     name: "Avery Walters",
     email: "avery.walters@example.com",
@@ -1638,7 +1588,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 55,
+    id: "55",
     avatar: "https://randomuser.me/api/portraits/men/55.jpg",
     name: "Isaac Marsh",
     email: "isaac.marsh@example.com",
@@ -1666,7 +1616,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 56,
+    id: "56",
     avatar: "https://randomuser.me/api/portraits/women/56.jpg",
     name: "Savannah Cross",
     email: "savannah.cross@example.com",
@@ -1694,7 +1644,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 57,
+    id: "57",
     avatar: "https://randomuser.me/api/portraits/men/57.jpg",
     name: "Christian Park",
     email: "christian.park@example.com",
@@ -1723,7 +1673,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 58,
+    id: "58",
     avatar: "https://randomuser.me/api/portraits/women/58.jpg",
     name: "Hailey Monroe",
     email: "hailey.monroe@example.com",
@@ -1751,7 +1701,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 59,
+    id: "59",
     avatar: "https://randomuser.me/api/portraits/men/59.jpg",
     name: "Jonathan Kim",
     email: "jonathan.kim@example.com",
@@ -1779,7 +1729,7 @@ const PROP_LIST = [
     newArrival: false,
   },
   {
-    id: 60,
+    id: "60",
     avatar: "https://randomuser.me/api/portraits/women/60.jpg",
     name: "Audrey Summers",
     email: "audrey.summers@example.com",
@@ -1808,4 +1758,4 @@ const PROP_LIST = [
   },
 ];
 
-export { PREMIUM_HOUSES, FAQ_LIST, CLIENTS, PROP_LIST };
+export { FAQ_LIST, CLIENTS, PROP_LIST };

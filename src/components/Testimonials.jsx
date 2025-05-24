@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -14,6 +14,17 @@ import Profile3 from "../assets/profile3.avif";
 import Profile4 from "../assets/profile4.avif";
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === CLIENTS.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 7000);
+    return () => clearInterval(interval);
+  });
+
   return (
     <div className="px-3 mb-15 max-w-[1100px] mx-auto">
       <div className="text-secondary flex items-center mb-22 sm:justify-between sm:px-5 lg:px-20">
@@ -49,7 +60,11 @@ const Testimonials = () => {
         </div>
       </div>
       <div>
-        <Carousel className="mx-auto sm:min-w-[400px] md:min-w-[550px] max-w-xs">
+        <Carousel
+          key={currentIndex}
+          opts={{ startIndex: currentIndex }}
+          className="mx-auto sm:min-w-[400px] md:min-w-[550px] max-w-xs"
+        >
           <CarouselContent>
             {CLIENTS.map((item, index) => (
               <CarouselItem key={index}>
@@ -57,7 +72,7 @@ const Testimonials = () => {
                   <Card className="bg-gray-400/10 text-secondary border  border-secondary/20 h-[200px]">
                     <CardContent className="flex justify-center px-6">
                       <div className="flex flex-col items-end ">
-                        <p className="text-[12px] min-h-[110px]">
+                        <p className="text-[10px] min-h-[110px]">
                           {item.review}
                         </p>
                         <div className="flex mt-3 gap-2">
@@ -68,7 +83,9 @@ const Testimonials = () => {
                           />
                           <div>
                             <h2 className="text-sm">{item.name}</h2>
-                            <h3 className="text-[10px]">{item.role}</h3>
+                            <h3 className="text-[8px] md:text-[10px]">
+                              {item.role}
+                            </h3>
                           </div>
                         </div>
                       </div>

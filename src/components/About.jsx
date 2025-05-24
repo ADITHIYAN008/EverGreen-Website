@@ -45,7 +45,21 @@ const About = () => {
         </div>
       </div>
       <div className="flex items-end flex-col xl:flex-row gap-2">
-        <div className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative border border-secondary/30 rounded-2xl">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          className="mt-10 md:min-h-[450px] lg:min-w-[500px] lg:h-[600px] relative border border-secondary/30 rounded-2xl"
+        >
           <img
             className="rounded-2xl lg:h-full lg:object-cover w-full"
             src={images[currentIndex]}
@@ -63,9 +77,23 @@ const About = () => {
               />
             ))}
           </div>
-        </div>
+        </motion.div>
         <div className="flex md:flex-row lg:flex-col gap-2">
-          <div className="w-1/2 text-center h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl">
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.5,
+            }}
+            className="w-1/2 text-center h-auto md:min-h-[230px] bg-secondary/5 px-3 lg:px-10 lg:h-[240px] lg:w-[400px] py-10 border border-secondary/30 rounded-2xl"
+          >
             <h3 className="text-xl sm:mt-10 md:mt-20 font-medium text-center lg:mt-10">
               Big things can happen in small spaces.
             </h3>
@@ -79,8 +107,22 @@ const About = () => {
             >
               Details
             </Link>
-          </div>
-          <div className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl">
+          </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.5,
+            }}
+            className="w-1/2 min-h-[230px] bg-secondary/5 sm:min-h-[300px] md:h-[350px] text-center lg:w-[400px] border border-secondary/30 rounded-2xl"
+          >
             <img className="rounded-xl" src={FourImg} alt="" />
             <h2 className="mt-4 flex flex-col text-[14px] font-medium">
               Pricing Start at <span>$256K</span>
@@ -105,7 +147,7 @@ const About = () => {
                 <FaArrowRightLong />
               </motion.div>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
       <CounterList />

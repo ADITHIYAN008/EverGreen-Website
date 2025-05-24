@@ -297,17 +297,19 @@ const House = () => {
                       },
                     }}
                     onClick={() => {
-                      setTimeout(() => {
-                        window.location.reload();
-                      }, 100);
+                      setImgId(item.id);
+                      setImgUrl(item.url);
                     }}
-                    className="w-[9rem] h-[8rem] rounded-2xl bg-secondary"
+                    className="w-[9rem] h-[8rem] rounded-2xl bg-secondary relative"
                   >
                     <img
                       className="w-full h-[8rem] object-cover lg:h-[10rem] rounded-xl"
                       src={item.url}
                       alt={item.title}
                     />
+                    <div className="absolute top-2 left-2 text-[8px] bg-secondary/90 text-primary lg:text-[12px] px-3 py-1 rounded-4xl">
+                      New
+                    </div>
                   </Link>
                   <div className="ml-2">
                     <h2 className="text-[11px] mt-2 font-semibold lg:mt-4 lg:text-[16px]">
