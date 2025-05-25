@@ -117,11 +117,11 @@ const AllList = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:gap-10">
+    <div className="flex flex-col pt-24 md:pt-36 md:gap-10">
       <div className="md:fixed md:h-full">
         <div className="md:max-w-[300px] hidden md:block md:py-10">
           <div className="flex justify-center">
-            <div className="w-[90%] px-6 py-6 rounded-3xl z-40 h-auto bg-primary border  border-gray-400/70   text-secondary">
+            <div className="w-[90%] px-6 py-6 rounded-3xl z-40 h-auto dark:bg-secondary bg-primary border  border-gray-400/70  text-secondary dark:text-primary">
               <h2 className="text-2xl text-center mb-7 font-bold">
                 Find the best place
               </h2>
@@ -131,11 +131,11 @@ const AllList = () => {
                   <input
                     onChange={(e) => setLooking(e.target.value.toLowerCase())}
                     value={looking}
-                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
+                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] dark:border dark:border-primary/30 bg-secondary/5 focus:ring-1 focus:ring-black"
                     type="text"
                     placeholder="Enter type"
                   />
-                  <ul className="text-[10px] flex gap-2 mt-2 text-secondary/30 ml-2">
+                  <ul className="text-[10px] flex gap-2 mt-2 dark:text-primary/30 text-secondary/30 ml-2">
                     <li>House,</li>
                     <li>Condo,</li>
                     <li>Cottage,</li>
@@ -147,11 +147,11 @@ const AllList = () => {
                   <input
                     onChange={(e) => setPrice(e.target.value)}
                     value={price}
-                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
+                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] dark:border dark:border-primary/30 bg-secondary/5 focus:ring-1 focus:ring-black"
                     type="number"
                     placeholder="Price"
                   />
-                  <ul className="text-[8px] flex gap-2 mt-2 text-secondary/30 ml-2">
+                  <ul className="text-[8px] flex gap-2 mt-2 dark:text-primary/30 text-secondary/30 ml-2">
                     <li>100000,</li>
                     <li>200000,</li>
                     <li>500000,</li>
@@ -165,11 +165,11 @@ const AllList = () => {
                       setLocation(e.target.value.trim().toLowerCase())
                     }
                     value={location}
-                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
+                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 dark:border dark:border-primary/30 focus:ring-black"
                     type="text"
                     placeholder="Location"
                   />
-                  <ul className="text-[7px] flex gap-2 mt-2 text-secondary/30 ml-2">
+                  <ul className="text-[7px] flex gap-2 mt-2 dark:text-primary/30 text-secondary/30 ml-2">
                     <li>New York,</li>
                     <li>Austin,</li>
                     <li>Las Vegas,</li>
@@ -183,7 +183,7 @@ const AllList = () => {
                   <input
                     onChange={(e) => setRooms(e.target.value)}
                     value={room}
-                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 focus:ring-black"
+                    className="w-[95%] px-4 py-3 rounded-lg focus:outline-none text-[12px] bg-secondary/5 focus:ring-1 dark:border dark:border-primary/30 focus:ring-black"
                     type="text"
                     placeholder="Eg.2"
                   />
@@ -191,7 +191,7 @@ const AllList = () => {
 
                 <button
                   onClick={handleReset}
-                  className="bg-secondary text-primary px-5 py-3 rounded-3xl mt-4 text-[13px] cursor-pointer w-full"
+                  className="bg-secondary text-primary px-5 py-3 rounded-3xl dark:bg-primary dark:text-secondary mt-4 text-[13px] cursor-pointer w-full"
                 >
                   Reset All
                 </button>
@@ -200,7 +200,7 @@ const AllList = () => {
           </div>
         </div>
         <Box
-          className="grid md:hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
+          className="grid md:hidden mb-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
           component="form"
           sx={{
             "& .MuiTextField-root": {
@@ -219,6 +219,7 @@ const AllList = () => {
               value={looking}
               label="Looking for"
               onChange={(e) => setLooking(e.target.value)}
+              className="dark:bg-primary dark:max-h-[2.5rem]"
               size="small"
               sx={{
                 height: 1,
@@ -245,6 +246,7 @@ const AllList = () => {
               select
               value={price}
               onChange={(e) => setPrice(e.target.value)}
+              className="dark:bg-primary dark:max-h-[2.5rem]"
               label="Price$"
               size="small"
             >
@@ -269,6 +271,7 @@ const AllList = () => {
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               label="Location"
+              className="dark:bg-primary dark:max-h-[2.5rem]"
               size="small"
               sx={{
                 height: 1,
@@ -295,6 +298,7 @@ const AllList = () => {
               value={room}
               onChange={(e) => setRooms(e.target.value)}
               label="Number of rooms"
+              className="dark:bg-primary dark:max-h-[2.5rem]"
               size="small"
               sx={{
                 height: 1,
@@ -316,7 +320,7 @@ const AllList = () => {
           </div>
           <button
             onClick={handleReset}
-            className="text-primary bg-secondary w-[8rem] h-10 ml-36 mt-4 rounded-3xl"
+            className="text-primary dark:bg-primary dark:text-secondary bg-secondary w-[8rem] h-10 ml-36 mt-4 rounded-3xl"
           >
             Reset
           </button>

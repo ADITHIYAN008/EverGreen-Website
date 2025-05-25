@@ -38,7 +38,7 @@ const Properties = ({ filters }) => {
       return item.bed == room;
     });
   return (
-    <div className="text-secondary px-5">
+    <div className="text-secondary dark:text-primary px-5">
       <div className="max-h-[18rem] rounded-3xl">
         <ul className="grid pb-20 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-15 w-full">
           {filtered.map((item, index) => (
@@ -82,7 +82,7 @@ const Properties = ({ filters }) => {
                   alt={item.title}
                 />
               </Link>
-              <div className="flex text-[15px] gap-3 md:gap-5 ml-2 mt-4">
+              <div className="flex text-[15px]  gap-3 md:gap-5 ml-2 mt-4">
                 <h2 className="flex gap-2 items-center">
                   <FaBed size={10} />{" "}
                   <span className="text-[10px] md:text-[12px]">
@@ -134,7 +134,7 @@ const Properties = ({ filters }) => {
                   <DrawerTrigger className="text-secondary  px-4 py-2 text-[11px] bg-green-400 rounded-3xl">
                     Buy Now
                   </DrawerTrigger>
-                  <DrawerContent className="bg-primary text-secondary max-w-[1100px] mx-auto">
+                  <DrawerContent className="bg-primary text-secondary max-w-[1100px] dark:bg-secondary dark:text-primary mx-auto">
                     <DrawerHeader>
                       <DrawerTitle className=" lg:text-3xl lg:ml-5">
                         Are you absolutely sure?
@@ -188,7 +188,7 @@ const Properties = ({ filters }) => {
                         Pay
                       </Link>
                       <DrawerClose>
-                        <Button className="bg-secondary text-primary ">
+                        <Button className="bg-secondary text-primary dark:bg-primary dark:text-secondary">
                           Cancel
                         </Button>
                       </DrawerClose>
@@ -200,7 +200,7 @@ const Properties = ({ filters }) => {
                   state={{
                     ImgId: item.id,
                   }}
-                  className="bg-secondary cursor-pointer text-[10px] text-primary  px-4 py-2 rounded-full"
+                  className="bg-secondary dark:bg-primary dark:text-secondary cursor-pointer text-[10px] text-primary  px-4 py-2 rounded-full"
                   href="#"
                 >
                   Contact Owner

@@ -45,17 +45,17 @@ const OwnerDetails = () => {
   const { id } = useParams();
 
   return (
-    <div className="text-secondary max-w-[1100px] mx-auto px-5 lg:pt-10 pt-5">
+    <div className="text-secondary pt-24 dark:text-primary max-w-[1100px] mx-auto px-5 lg:pt-40 ">
       <h1 className="text-3xl font-secondary underline text-center mb-5">
         Profile
       </h1>
-      {PROP_LIST.filter((item) => item.id === id).map((item) => (
-        <>
+      {PROP_LIST.filter((item) => item.id === id).map((item, index) => (
+        <div key={index}>
           <div
-            key={item.id}
-            className="flex lg:mt-15 gap-6 text-secondary lg:gap-10   rounded-2xl"
+            key={index}
+            className="flex lg:mt-15 gap-6 text-secondary  dark:text-primary lg:gap-10   rounded-2xl"
           >
-            <div className="w-30 h-35 md:w-[15rem] md:h-[15rem] bg-secondary overflow-clip rounded-2xl">
+            <div className="w-30 h-35 md:w-[15rem] md:h-[15rem] bg-secondary  overflow-clip rounded-2xl">
               <img
                 className="object-cover  rounded-2xl border-2 w-full h-full object-center"
                 src={item.avatar}
@@ -94,7 +94,7 @@ const OwnerDetails = () => {
               </div>
               <div className="hidden lg:block">
                 <h3 className=" mt-4 text-[18px] font-semibold">Description</h3>
-                <div className="text-[10px] w-[80%] text-left mt-2 text-secondary/50">
+                <div className="text-[10px] w-[80%] text-left mt-2 text-secondary/50 dark:text-primary/50">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente quaerat sint maxime rem temporibus autem, quas modi
                   ducimus voluptatem mollitia quod ut ad commodi non perferendis
@@ -106,7 +106,7 @@ const OwnerDetails = () => {
           <h3 className=" mt-7 text-[18px] font-semibold lg:hidden">
             Description
           </h3>
-          <div className="text-[10px] lg:hidden w-[95%] text-left ml-3 mt-2 text-secondary/50">
+          <div className="text-[10px] lg:hidden w-[95%] text-left ml-3 mt-2 dark:text-primary/50 text-secondary/50">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             quaerat sint maxime rem temporibus autem, quas modi ducimus
             voluptatem mollitia quod ut ad commodi non perferendis ipsum. Saepe,
@@ -230,7 +230,7 @@ const OwnerDetails = () => {
             </AlertDialog>
           </div>
           <div className="h-10"></div>
-        </>
+        </div>
       ))}
     </div>
   );

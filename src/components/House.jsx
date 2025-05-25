@@ -48,22 +48,24 @@ const House = () => {
   const [imgId, setImgId] = useState(imgData.Id || id);
 
   return (
-    <div className="text-secondary max-w-[1100px] mx-auto">
+    <div className="text-secondary pt-20 md:pt-36 dark:text-primary max-w-[1100px] mx-auto">
       <div className="mt-6">
         <img
-          className="sm:w-[90%] sm:min-h-[500px] w-[90%] min-w-[300px] border object-cover border-secondary/50 lg:w-[95%] lg:min-h-[500px] lg:max-h-[600px] min-h-[250px]  mx-auto rounded-3xl"
+          className="sm:w-[90%] sm:min-h-[500px] w-[90%] min-w-[300px] border object-cover border-secondary/50 dark:border-primary/50 lg:w-[95%] lg:min-h-[500px] lg:max-h-[600px] min-h-[250px]  mx-auto rounded-3xl"
           src={imgUrl}
           alt=""
         />
         <div className="px-10 flex gap-5 mt-6">
-          <div className="w-11 h-11 sm:w-15 sm:h-15 cursor-pointer bg-secondary rounded-xl">
+          <div className="w-11 h-11 sm:w-15 sm:h-15 cursor-pointer bg-secondary  rounded-xl">
             <img
               onClick={() => {
                 setImgUrl(relImg.ImgOne);
                 setActiveTab(relImg.ImgOne);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == relImg.ImgOne ? "border border-secondary" : ""
+                activeImg == relImg.ImgOne
+                  ? "border border-secondary dark:border-primary"
+                  : ""
               }`}
               src={relImg.ImgOne}
               alt=""
@@ -76,7 +78,9 @@ const House = () => {
                 setActiveTab(relImg.ImgTwo);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == relImg.ImgTwo ? "border border-secondary" : ""
+                activeImg == relImg.ImgTwo
+                  ? "border border-secondary dark:border-primary"
+                  : ""
               }`}
               src={relImg.ImgTwo}
               alt=""
@@ -89,7 +93,9 @@ const House = () => {
                 setActiveTab(relImg.ImgThree);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == relImg.ImgThree ? "border border-secondary" : ""
+                activeImg == relImg.ImgThree
+                  ? "border border-secondary dark:border-primary"
+                  : ""
               }`}
               src={relImg.ImgThree}
               alt=""
@@ -102,7 +108,9 @@ const House = () => {
                 setActiveTab(relImg.ImgFour);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == relImg.ImgFour ? "border border-secondary" : ""
+                activeImg == relImg.ImgFour
+                  ? "border border-secondary dark:border-primary"
+                  : ""
               }`}
               src={relImg.ImgFour}
               alt=""
@@ -115,7 +123,9 @@ const House = () => {
                 setActiveTab(relImg.ImgFive);
               }}
               className={`w-full h-full object-cover rounded-xl ${
-                activeImg == relImg.ImgFive ? "border border-secondary" : ""
+                activeImg == relImg.ImgFive
+                  ? "border border-secondary dark:border-primary"
+                  : ""
               }`}
               src={relImg.ImgFive}
               alt=""
@@ -214,7 +224,7 @@ const House = () => {
             state={{
               ImgId: imgId,
             }}
-            className="bg-secondary text-primary px-3 py-2 rounded-2xl border text-[11px] lg:text-[16px] lg:px-5 hover:bg-transparent hover:text-secondary hover:border transition-all duration-300 ease-in"
+            className="bg-secondary text-primary px-3 py-2 rounded-2xl border text-[11px] lg:text-[16px] lg:px-5 hover:bg-transparent dark:bg-primary dark:text-secondary hover:text-secondary hover:border transition-all duration-300 ease-in"
           >
             Contact Owner
           </Link>

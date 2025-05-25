@@ -3,20 +3,18 @@ import { FiMenu } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoClose, IoEarOutline, IoEarthOutline, IoMenu } from "react-icons/io5";
 import EverGreenLogo from "../assets/EverGreen.png";
-import useDarkMode from "@/constant/useDarkMode";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-const Nav = () => {
+const Nav = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("Home");
-  const [theme, toggleTheme] = useDarkMode();
 
   const tabs = ["Home", "About Us", "Property List", "Contact Us"];
 
   return (
     <>
       <nav className="flex md:hidden  z-50 justify-between px-2 pt-5 items-center fixed w-full ">
-        <div className="flex w-full justify-between backdrop-blur-3xl px-4 py-2 bg-primary dark:bg-secondary rounded-full shadow-2xl border border-secondary/40">
+        <div className="flex w-full justify-between backdrop-blur-3xl px-4 py-2 dark:border-primary/40 bg-primary dark:bg-secondary rounded-full shadow-2xl border border-secondary/40">
           <h1 className="text-2xl font-secondary text-secondary dark:text-primary">
             EverGreen
           </h1>
@@ -136,8 +134,15 @@ const Nav = () => {
                 </h2>
               </div>
             </div>
+            <button className="hidden md:block" onClick={toggleTheme}>
+              {theme === "dark" ? (
+                <MdLightMode className="text-primary cursor-pointer hover:text-yellow-300 duration-300 transition-all ease-in-out size-6" />
+              ) : (
+                <MdDarkMode className="text-secondary cursor-pointer hover:text-blue-500 duration-300 transition-all ease-in-out size-6" />
+              )}
+            </button>
             <a
-              className="bg-[#52e05b] text-secondary px-5 py-2 rounded-full border hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
+              className="bg-[#52e05b] text-secondary px-5 py-2 rounded-full border dark:hover:bg-primary dark:hover:text-secondary hover:bg-secondary hover:text-primary hover:border hover:border-secondary transition-all duration-400 border-secondary/30"
               href="#"
             >
               Sign Up

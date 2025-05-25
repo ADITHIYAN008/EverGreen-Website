@@ -8,8 +8,10 @@ import FAQ from "./components/FAQ";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Lenis from "lenis";
+import useDarkMode from "./constant/useDarkMode";
 
 const App = () => {
+  const [theme, toggleTheme] = useDarkMode();
   useEffect(() => {
     const lenis = new Lenis({
       duration: 5,
@@ -34,7 +36,7 @@ const App = () => {
   }, []);
   return (
     <div>
-      <Nav />
+      <Nav theme={theme} toggleTheme={toggleTheme} />
       <HeroSection />
       <About />
       <Discover />
