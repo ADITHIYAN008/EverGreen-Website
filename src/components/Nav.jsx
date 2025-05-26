@@ -134,11 +134,14 @@ const Nav = ({ theme, toggleTheme }) => {
                 </h2>
               </div>
             </div>
-            <button className="hidden md:block" onClick={toggleTheme}>
+            <button
+              className="hidden md:block px-2 py-2 bg-primary rounded-full"
+              onClick={toggleTheme}
+            >
               {theme === "dark" ? (
-                <MdLightMode className="text-primary cursor-pointer hover:text-yellow-300 duration-300 transition-all ease-in-out size-6" />
+                <MdLightMode className="text-secondary cursor-pointer hover:text-yellow-500 duration-300 transition-all ease-in-out size-5" />
               ) : (
-                <MdDarkMode className="text-secondary cursor-pointer hover:text-blue-500 duration-300 transition-all ease-in-out size-6" />
+                <MdDarkMode className="text-secondary cursor-pointer hover:text-blue-500 duration-300 transition-all ease-in-out size-5" />
               )}
             </button>
             <a
