@@ -135,7 +135,7 @@ const Nav = ({ theme, toggleTheme }) => {
               </div>
             </div>
             <button
-              className="hidden md:block px-2 py-2 bg-primary rounded-full"
+              className="hidden cursor-pointer md:block px-2 py-2 bg-primary rounded-full"
               onClick={toggleTheme}
             >
               {theme === "dark" ? (
