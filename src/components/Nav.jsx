@@ -60,7 +60,7 @@ const Nav = ({ theme, toggleTheme }) => {
           >
             <ul className="flex flex-col gap-11 px-9 py-12">
               <a
-                href="#"
+                href="/"
                 onClick={() => setIsOpen(false)}
                 className="flex justify-between"
               >
