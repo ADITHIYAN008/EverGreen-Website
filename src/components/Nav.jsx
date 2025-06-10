@@ -60,7 +60,7 @@ const Nav = ({ theme, toggleTheme }) => {
           >
             <ul className="flex flex-col gap-11 px-9 py-12">
               <a
-                href="/"
+                href="#"
                 onClick={() => setIsOpen(false)}
                 className="flex justify-between"
               >
@@ -102,7 +102,7 @@ const Nav = ({ theme, toggleTheme }) => {
             {tabs.map((tab) => {
               let href = "#";
 
-              if (tab === "Home") href = "#home";
+              if (tab === "Home") href = "/";
               else if (tab === "About Us") href = "#about";
               else if (tab === "Property List") href = "#property";
               else if (tab === "Contact Us") href = "#contact";
